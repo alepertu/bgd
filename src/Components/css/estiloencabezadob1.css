@@ -1,0 +1,34 @@
+header{
+	display: flex;
+	height: 80px;
+	background-color: black;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+	display: flex;
+}
+
+.logo img{
+	height: 100px;
+	margin-right: 10px;
+}
+
+nav a{
+	font-weight: 600;
+	padding-right: 10px;
+}
+
+nav a:hover{
+	border-bottom: 5px solid yellow; 
+	padding: 3px;
+}
