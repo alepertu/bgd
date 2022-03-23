@@ -9,6 +9,9 @@ function Inicio() {
         aplicaciones mobiles, implementando tecnologías modernas y con
         soluciones que se adaptan a tus necesidades.
       </p>
+      <a id="boton-solicitar-presupuesto" href="#contacto">
+        Solicita tu presupuesto
+      </a>
     </main>
   );
 }
