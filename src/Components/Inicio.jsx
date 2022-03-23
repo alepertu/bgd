@@ -1,3 +1,5 @@
+import './css/inicio.css';
+
 function Inicio() {
   return (
     <main id="inicio">
