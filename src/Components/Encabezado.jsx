@@ -3,14 +3,14 @@ import logo from '../Images/logobgdesarrollo.png';
 function Encabezado() {
   return (
     <header>
-      <div class="logo">
+      <div className="logo">
         <img src={logo} alt="Logo de BD Desarrollo"></img>
       </div>
       <nav>
-        <a href="nav-lin">INICIO</a>
-        <a href="nav-link">NOSOTROS</a>
-        <a href="nav-link">PROYECTOS</a>
-        <a href="nav-link">CONTACTO</a>
+        <a href="#inicio">INICIO</a>
+        <a href="#nosotros">NOSOTROS</a>
+        <a href="#proyectos">PROYECTOS</a>
+        <a href="#contacto">CONTACTO</a>
       </nav>
     </header>
   );
