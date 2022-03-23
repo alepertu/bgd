@@ -1,0 +1,28 @@
+body{
+	background-color: black;
+}
+
+.borde{
+    border: 5px solid white;
+	padding-bottom: 270px;
+	width: 250px;
+	height: 200px;
+}
+
+.borde img{
+	height: 220px;
+	padding: 15px;
+}
+
+.borde h2{
+	color: white;
+	padding-left: 80px;
+	font-size: 30px;
+
+}
+
+.borde p{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
