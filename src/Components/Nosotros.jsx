@@ -12,6 +12,7 @@ function Nosotros() {
         nuestros clientes.
       </p>
       <h3>Nuestras tecnolgías</h3>
+      <section></section>
     </section>
   );
 }
