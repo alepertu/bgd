@@ -1,0 +1,22 @@
+#inicio{
+    text-align: left;
+    margin-left: 83px;
+    margin-top: 88px;
+}
+
+h1{
+    font-size: 55px;
+}
+
+p{
+    width: 50%;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#boton-solicitar-presupuesto{
+    padding: 15px;
+    font-size: 16px;
+    background: #FFBE01;
+    color: black;
+}
