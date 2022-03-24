@@ -5,8 +5,7 @@ function Nosotros() {
       <h2>¡Hola!</h2>
       <p>
         Somos una empresa uruguaya que busca instalarse en el mercado del
-        software. 
-        Nos gusta asumir nuevos desafíos y contamos con las
+        software. Nos gusta asumir nuevos desafíos y contamos con las
         herramientas y el conocimiento para poner en práctica todas tus ideas.
         <br />
         <br />

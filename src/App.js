@@ -2,6 +2,7 @@ import './App.css';
 import Encabezado from './Components/Encabezado.jsx';
 import Inicio from './Components/Inicio';
 import Nosotros from './Components/Nosotros';
+import Proyectos from './Components/Proyectos';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Encabezado />
       <Inicio />
       <Nosotros />
+      <Proyectos />
     </div>
   );
 }
