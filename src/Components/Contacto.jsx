@@ -4,6 +4,35 @@ import './css/estilo-contactanosb1.css';
 function Contacto() {
   return (
     <section id="contacto">
+      <div className="cosas">
+        <p>Nombre</p>
+        <p>e-mail</p>
+        <p>Mensaje</p>
+      </div>
+
+      <div className="container-form">
+        <form action="#" autocomplete="off">
+          <input
+            type="text"
+            name="nombre"
+            className="campo"
+            style={{ width: '314px', heigth: '1px' }}
+          />
+          <input
+            type="emal"
+            name="email"
+            className="campo"
+            style={{ width: '314px', heigth: '1px' }}
+          />
+          <textarea name="mensaje"></textarea>
+          <input
+            type="submit"
+            name="enviar"
+            value="¡Enviar Mensaje!"
+            className="btn-enviar"
+          />
+        </form>
+      </div>
       <p>
         No dudes en consultarnos sobre tus dudas o solicitar un presupuesto de
         desarrollo.
@@ -19,10 +48,6 @@ function Contacto() {
         <br />
         bgdesarrollo@gmail.com
       </span>
-      <a href="#inicio">INICIO</a>
-      <a href="#nosotros">NOSOTROS</a>
-      <a href="#proyectos">PROYECTOS</a>
-      <a href="#contacto">CONTACTO</a>
     </section>
   );
 }
