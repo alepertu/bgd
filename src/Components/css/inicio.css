@@ -1,6 +1,6 @@
 #inicio{
     text-align: left;
-    margin-left: 83px;
+    margin-left: 145px;
     padding-top: 88px;
     height: 100vh
 }
@@ -23,4 +23,8 @@ p{
     font-size: 16px;
     background: #FFBE01;
     color: black;
+}
+
+#boton-solicitar-presupuesto:hover{
+    background-color: white;
 }

@@ -6,7 +6,7 @@ function Proyectos() {
     <section id="proyectos">
       <h2>Proyectos realizados</h2>
       <Proyecto
-        img=""
+        img="../images/logopaseuy"
         nombre="PaseUy"
         descrip="Aplicación web dedicada a la compra y venta de entradas para diferentes eventos."
       />
