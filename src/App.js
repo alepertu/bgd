@@ -11,6 +11,7 @@ function App() {
       <Inicio />
       <Nosotros />
       <Proyectos />
+      <Contacto />
     </div>
   );
 }
