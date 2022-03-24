@@ -1,7 +1,8 @@
 #inicio{
     text-align: left;
     margin-left: 83px;
-    margin-top: 88px;
+    padding-top: 88px;
+    height: 100vh
 }
 
 h1{
