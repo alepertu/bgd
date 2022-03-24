@@ -7,6 +7,8 @@ body{
 	padding-bottom: 270px;
 	width: 250px;
 	height: 200px;
+	margin-right: 30px;
+	margin-inline-end: 75px;
 }
 
 .borde img{
@@ -26,4 +28,3 @@ body{
 	font-size: 20px;
 	text-align: center;
 }
-

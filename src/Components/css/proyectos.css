@@ -1,8 +1,13 @@
 #proyectos{
-    margin-left: 145px 
+    padding-top: 80px;
+    margin-left: 145px;
+    height: 100vh
 }
 
 h2{
     text-align: left;
 }
 
+.proyectosreal{
+    display: flex;
+}

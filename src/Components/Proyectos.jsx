@@ -5,8 +5,9 @@ function Proyectos() {
   return (
     <section id="proyectos">
       <h2>Proyectos realizados</h2>
+      <div className='proyectosreal'>
       <Proyecto
-        img="../images/logopaseuy"
+        img=""
         nombre="PaseUy"
         descrip="Aplicación web dedicada a la compra y venta de entradas para diferentes eventos."
       />
@@ -20,6 +21,7 @@ function Proyectos() {
         nombre="Givt"
         descrip="Sitio web dedicado a la recaudación de dinero para diferentes eventos o causas, contribuyendo con ello a las ONGs asociadas."
       />
+      </div>
     </section>
   );
 }

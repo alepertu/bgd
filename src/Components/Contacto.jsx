@@ -4,7 +4,7 @@ import './css/estilo-contactanosb1.css';
 function Contacto() {
   return (
     <section id="contacto">
-      <div className="cosas">
+      <div className="cosa">
         <p>Nombre</p>
         <p>e-mail</p>
         <p>Mensaje</p>
