@@ -13,7 +13,7 @@ function Nosotros() {
         día a día para ejecutar proyectos con calidad y comunicación con
         nuestros clientes.
       </p>
-      <h3>Nuestras tecnolgías</h3>
+      <h3>Nuestras tecnologías</h3>
       <section></section>
     </section>
   );

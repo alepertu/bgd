@@ -1,4 +1,5 @@
 import Proyecto from './Proyecto';
+import './css/proyectos.css';
 
 function Proyectos() {
   return (
