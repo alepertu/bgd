@@ -3,7 +3,7 @@ import './css/proyectos.css';
 
 function Proyectos() {
   return (
-    <section>
+    <section id="proyectos">
       <h2>Proyectos realizados</h2>
       <Proyecto
         img=""

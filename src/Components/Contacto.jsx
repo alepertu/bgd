@@ -3,7 +3,7 @@ import './css/estilo-contactanosb1.css';
 //import mail
 function Contacto() {
   return (
-    <section>
+    <section id="contacto">
       <p>
         No dudes en consultarnos sobre tus dudas o solicitar un presupuesto de
         desarrollo.
