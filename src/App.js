@@ -3,6 +3,7 @@ import Encabezado from './Components/Encabezado.jsx';
 import Inicio from './Components/Inicio';
 import Nosotros from './Components/Nosotros';
 import Proyectos from './Components/Proyectos';
+import Contacto from './Components/Contacto';
 
 function App() {
   return (
