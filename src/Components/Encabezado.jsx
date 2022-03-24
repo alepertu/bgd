@@ -1,5 +1,5 @@
 import './css/estiloencabezadob1.css';
-import logo from '../Images/logobgdesarrollo.png';
+import logo from '../images/logobgdesarrollo.png';
 function Encabezado() {
   return (
     <header>
