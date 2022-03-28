@@ -4,12 +4,12 @@ import './css/estilo-contactanosb1.css';
 function Contacto() {
   return (
     <section id="contacto">
-      <div className="cosa">
+     <div id='formulario'>
+     <div className="cosa">
         <p>Nombre</p>
         <p>e-mail</p>
         <p>Mensaje</p>
       </div>
-
       <div className="container-form">
         <form action="#" autocomplete="off">
           <input
@@ -33,6 +33,7 @@ function Contacto() {
           />
         </form>
       </div>
+     </div>
       <p>
         No dudes en consultarnos sobre tus dudas o solicitar un presupuesto de
         desarrollo.
