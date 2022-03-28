@@ -4,8 +4,13 @@ import './css/estilo-contactanosb1.css';
 function Contacto() {
   return (
     <section id="contacto">
+<<<<<<< HEAD
      <div id='formulario'>
      <div className="cosa">
+=======
+      <h2>¡Contáctanos!</h2>
+      <div className="cosa">
+>>>>>>> c9b80e24eeeba41134fdc3e2db91e4d2087bcbee
         <p>Nombre</p>
         <p>e-mail</p>
         <p>Mensaje</p>
@@ -35,12 +40,13 @@ function Contacto() {
       </div>
      </div>
       <p>
-        No dudes en consultarnos sobre tus dudas o solicitar un presupuesto de
-        desarrollo.
+        ¡Estamos dispuestos a aclarar todas tus dudas!
         <br />
         <br />
         Nos pondremos en contacto contigo enseguida, a través del e-mail que
-        ingreses.{' '}
+        ingreses.
+        <br />
+        ¡Brindamos soluciones con la mejor experiencia!
       </p>
       <h3>También puedes...</h3>
       <span>
