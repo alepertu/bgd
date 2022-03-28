@@ -10,8 +10,9 @@ function Inicio() {
       </h1>
       <p>
         Nos dedicamos al diseño, desarrollo y mantenimiento de páginas webs y
-        aplicaciones mobiles, implementando tecnologías modernas y con
-        soluciones que se adaptan a tus necesidades.
+        aplicaciones móviles, implementando tecnologías modernas y con
+        soluciones que se adaptan a las necesidades de tu compañía o
+        emprendimiento.
       </p>
       <a id="boton-solicitar-presupuesto" href="#contacto">
         Solicita tu presupuesto

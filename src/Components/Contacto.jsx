@@ -4,6 +4,7 @@ import './css/estilo-contactanosb1.css';
 function Contacto() {
   return (
     <section id="contacto">
+      <h2>¡Contáctanos!</h2>
       <div className="cosa">
         <p>Nombre</p>
         <p>e-mail</p>
@@ -34,12 +35,13 @@ function Contacto() {
         </form>
       </div>
       <p>
-        No dudes en consultarnos sobre tus dudas o solicitar un presupuesto de
-        desarrollo.
+        ¡Estamos dispuestos a aclarar todas tus dudas!
         <br />
         <br />
         Nos pondremos en contacto contigo enseguida, a través del e-mail que
-        ingreses.{' '}
+        ingreses.
+        <br />
+        ¡Brindamos soluciones con la mejor experiencia!
       </p>
       <h3>También puedes...</h3>
       <span>

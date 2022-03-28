@@ -10,13 +10,15 @@ function Nosotros() {
       <h2>¡Hola!</h2>
       <p>
         Somos una empresa uruguaya que busca instalarse en el mercado del
-        software. Nos gusta asumir nuevos desafíos y contamos con las
-        herramientas y el conocimiento para poner en práctica todas tus ideas.
+        software. Nos caracterizamos por asumir nuevos desafíos, contando con
+        las herramientas y el conocimiento para convertir tus ideas en
+        realidades.
         <br />
         <br />
-        Nos apasiona el emprendurismo, el trabajo en equipo, y nos esforzamos
-        día a día para ejecutar proyectos con calidad y comunicación con
-        nuestros clientes.
+        Nos apasiona el emprendurismo, el trabajo en equipo, y ejecutar
+        proyectos de calidad para cada uno de nuestros clientes. ¿La clave? Una
+        buena comunicación y correcta apreciación del trabajo que quiere
+        realizarse.
       </p>
       <h3>Nuestras tecnologías</h3>
       <Presentacion
