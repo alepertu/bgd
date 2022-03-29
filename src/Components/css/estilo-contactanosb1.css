@@ -1,5 +1,5 @@
 #contacto{
-    margin-left: 145px;
+    margin-left: 7%;
 }
 
 .container-form{
@@ -31,15 +31,4 @@
     cursor: pointer;
     padding-right: 200px;
 }
-h1 {
-	color: white;
-    padding-bottom: 10px;
-}
-p{
-	color: white;
-}
-body{
-	background: black
-}
-
 

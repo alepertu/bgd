@@ -28,4 +28,5 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 88%;
+    grid-gap: 60px
 }

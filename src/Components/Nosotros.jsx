@@ -56,12 +56,12 @@ function Nosotros() {
       <section className="presentaciones">
         <Presentacion
           persona="Alejandro Pertusatti"
-          bio="Soy Ale, tengo 23 años. Me recibí de Diseñador Gráfico en 2019, y soy un apasionado de la programación. Soy estudiante avanzado de Químico Farmacéutico en UdelaR. Además, trabajo actualmente en Customer Service de Mercado Libre."
+          bio="Soy Ale, tengo 23 años. Me recibí de Diseñador Gráfico en 2019, y soy un apasionado de la programación. Soy estudiante avanzado de Químico Farmacéutico en UdelaR. Además, trabajo actualmente en Customer Service de Mercado Libre. Me gusta conocer lugares nuevos, y disfruto del tiempo de calidad con mi familia."
           perfil={moi}
         />
         <Presentacion
           persona="María Pía Machado"
-          bio="Soy Pía, tengo 23 años. Me titulé como Analista en Programación en 2020. Actualmente soy estudiante avanzada de Ingeniería Química en UdelaR. Además de programar, trabajo en Customer Service de Mercado Libre. Distrufo de mis trabajos y de los momentos en familia."
+          bio="Soy Pía, tengo 23 años. Me titulé como Analista en Programación en 2020. Actualmente soy estudiante avanzada de Ingeniería Química en UdelaR. Además de programar, trabajo en Customer Service de Mercado Libre. Disfruto de mis trabajos, de la música, de viajar, y de pasar buenos momentos en familia."
           perfil={moia}
         />
         <Presentacion
