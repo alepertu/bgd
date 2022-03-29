@@ -1,6 +1,10 @@
 #contacto{
+<<<<<<< HEAD
     margin-left: 145px;
     height: 100vh
+=======
+    margin-left: 7%;
+>>>>>>> df0d2f65de4dfa1d07df98519a6a60f9348d7060
 }
 
 .container-form{
@@ -32,6 +36,7 @@
     cursor: pointer;
     padding-right: 200px;
 }
+<<<<<<< HEAD
 h1 {
 	color: white;
 }
@@ -53,4 +58,6 @@ body{
     padding-top: 300px;
 }
 
+=======
+>>>>>>> df0d2f65de4dfa1d07df98519a6a60f9348d7060
 

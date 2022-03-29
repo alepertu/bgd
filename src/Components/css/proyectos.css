@@ -1,13 +1,15 @@
-#proyectos{
+#proyectos {
     padding-top: 80px;
-    margin-left: 145px;
-    height: 100vh
+    margin-left: 7%;
 }
 
-h2{
+h2 {
     text-align: left;
 }
 
-.proyectosreal{
-    display: flex;
+.proyectosreal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 88%;
+    grid-gap: 40px
 }

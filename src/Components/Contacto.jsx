@@ -4,17 +4,13 @@ import './css/estilo-contactanosb1.css';
 function Contacto() {
   return (
     <section id="contacto">
-<<<<<<< HEAD
-     <div id='formulario'>
-     <div className="cosa">
-=======
       <h2>¡Contáctanos!</h2>
       <div className="cosa">
->>>>>>> c9b80e24eeeba41134fdc3e2db91e4d2087bcbee
         <p>Nombre</p>
         <p>e-mail</p>
         <p>Mensaje</p>
       </div>
+ 
       <div className="container-form">
         <form action="#" autocomplete="off">
           <input
@@ -38,7 +34,6 @@ function Contacto() {
           />
         </form>
       </div>
-     </div>
       <p>
         ¡Estamos dispuestos a aclarar todas tus dudas!
         <br />
@@ -58,5 +53,6 @@ function Contacto() {
     </section>
   );
 }
-
+ 
 export default Contacto;
+ 
