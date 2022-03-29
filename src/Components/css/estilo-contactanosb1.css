@@ -1,30 +1,26 @@
 #contacto{
-<<<<<<< HEAD
-    margin-left: 145px;
-    height: 100vh
-=======
     margin-left: 7%;
->>>>>>> df0d2f65de4dfa1d07df98519a6a60f9348d7060
+    display: flex;
 }
-
+ 
 .container-form{
     width: 100%;
     max-width: 150px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 70px;
+ 
 }
 .container-form form .campo, textarea{
     width: 100%;
-    padding: 10px 10px;
+    padding: 15px 10px;
     font-size: 16px;
     border: 1px solid #dbdbdb;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     outline: 0px;
 }
 .container-form form textarea{
     min-width: 314px;
     min-height: 140px;
-    max-height: 300px;
+    max-height: 150px;
 }
 .container-form .btn-enviar{
     padding: 15px;
@@ -36,7 +32,6 @@
     cursor: pointer;
     padding-right: 200px;
 }
-<<<<<<< HEAD
 h1 {
 	color: white;
 }
@@ -55,9 +50,18 @@ body{
 }
 #formulario{
     display: flex;
-    padding-top: 300px;
+    padding-bottom: 300px;
 }
-
-=======
->>>>>>> df0d2f65de4dfa1d07df98519a6a60f9348d7060
-
+#todoformulario{
+    padding-top: 90px;
+}
+#textoform p{
+    justify-content: center right;
+    margin-top: 260px;
+    margin-left: 320px;
+    text-align: left;
+}
+#textoform h3{
+    font-size: 40px;
+    margin-left: 320px;
+}

@@ -4,13 +4,14 @@ import './css/estilo-contactanosb1.css';
 function Contacto() {
   return (
     <section id="contacto">
+      <div id='todoformulario'>
       <h2>¡Contáctanos!</h2>
+      <div id='formulario'>
       <div className="cosa">
         <p>Nombre</p>
         <p>e-mail</p>
         <p>Mensaje</p>
       </div>
- 
       <div className="container-form">
         <form action="#" autocomplete="off">
           <input
@@ -29,21 +30,34 @@ function Contacto() {
           <input
             type="submit"
             name="enviar"
-            value="¡Enviar Mensaje!"
+            value="¡ENVIAR!"
             className="btn-enviar"
           />
         </form>
       </div>
+
+      </div>
+      </div>
+      <div id='textoform'>
       <p>
-        ¡Estamos dispuestos a aclarar todas tus dudas!
+        ¡Estamos dispuestos a aclarar 
+        <br />
+        todas tus dudas!
         <br />
         <br />
-        Nos pondremos en contacto contigo enseguida, a través del e-mail que
-        ingreses.
+        Nos pondremos en contacto 
         <br />
-        ¡Brindamos soluciones con la mejor experiencia!
+        contigo enseguida, a través 
+        <br />
+        del e-mail que ingreses.
+        <br />
+        <br />
+        ¡Brindamos soluciones con la
+        <br />
+         mejor experiencia!
       </p>
       <h3>También puedes...</h3>
+      </div>
       <span>
         +598 98 381 512
         <br />
