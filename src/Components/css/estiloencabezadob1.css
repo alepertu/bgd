@@ -9,8 +9,6 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	justify-content: space-between;
-	align-items: center;
 	box-sizing: border-box;
 	height: 100px;
 }
@@ -23,20 +21,22 @@ a{
 	padding-bottom: 5px;
 }
 
-.logo{
-	display: flex;
-}
-
 .logo img{
 	height: 100px;
 	margin-left: 70px;
 }
 
-nav a{
-	font-weight: 300;
-	margin-right: 100px;
+nav {
+	margin-left: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
-nav a:hover{
+nav a{
+	font-weight: 300;
+}
+
+nav a:hover, .activa{
 	border-bottom: 5px solid #FFBE01; 
 }

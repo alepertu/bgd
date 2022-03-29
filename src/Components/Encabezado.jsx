@@ -12,25 +12,25 @@ function Encabezado() {
         <a
           href="#inicio"
           onClick={() => setOpcion('inicio')}
-          className={opcion == 'inicio' ? 'activa' : null}>
+          className={opcion === 'inicio' ? 'activa' : null}>
           INICIO
         </a>
         <a
           href="#nosotros"
           onClick={() => setOpcion('nosotros')}
-          className={opcion == 'nosotros' ? 'activa' : null}>
+          className={opcion === 'nosotros' ? 'activa' : null}>
           NOSOTROS
         </a>
         <a
           href="#proyectos"
           onClick={() => setOpcion('proyectos')}
-          className={opcion == 'proyectos' ? 'activa' : null}>
+          className={opcion === 'proyectos' ? 'activa' : null}>
           PROYECTOS
         </a>
         <a
           href="#contacto"
           onClick={() => setOpcion('contacto')}
-          className={opcion == 'contacto' ? 'activa' : null}>
+          className={opcion === 'contacto' ? 'activa' : null}>
           CONTACTO
         </a>
       </nav>

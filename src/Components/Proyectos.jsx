@@ -20,8 +20,8 @@ function Proyectos() {
           descrip="Aplicación mobile desarrollada para validar entradas adquiridas en PaseUy, mediante reconocimiento de código QR."
         />
         <Proyecto
-          img=""
-          nombre={givt}
+          img={givt}
+          nombre="Givt"
           descrip="Sitio web dedicado a la recaudación de dinero para diferentes eventos o causas, contribuyendo con ello a las ONGs asociadas."
         />
       </div>
