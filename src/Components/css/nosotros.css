@@ -12,5 +12,21 @@ h2{
 h3{
     font-size: 55px;
     color: white;
-    padding-bottom: 1000px;
+}
+
+.tecnologias {
+    width: 80%;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(7, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.presentaciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-items: center;
 }
