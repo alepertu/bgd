@@ -1,6 +1,7 @@
 import './css/estilo-contactanosb1.css';
-//import wpp
-//import mail
+import wpp from '../images/iconos/whatsapp.svg';
+import mail from '../images/iconos/mail.svg';
+
 function Contacto() {
   return (
     <section id="contacto">
@@ -20,7 +21,7 @@ function Contacto() {
             style={{ width: '314px', heigth: '1px' }}
           />
           <input
-            type="emal"
+            type="email"
             name="email"
             className="campo"
             style={{ width: '314px', heigth: '1px' }}
