@@ -52,6 +52,7 @@ function Nosotros() {
         <img src={apache} alt="Logo Apache"></img>
       </section>
 
+      <h2>Sobre nosotros</h2>
       <section className="presentaciones">
         <Presentacion
           persona="Alejandro Pertusatti"
