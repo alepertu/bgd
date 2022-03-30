@@ -1,68 +1,100 @@
 #contacto{
     margin-left: 7%;
-    display: flex;
+    display: grid;
     padding-top: 88px;
+    grid-template-columns: 1fr 1fr;
+    width: 88%;
+}
+
+#todoformulario h2 {
+    margin: 1.5rem auto;
+}
+
+#todoformulario form {
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr 2fr;
+    padding-bottom: 300px;
+    width: 100%;
+    color: white;
+    font-size: 1.3rem;
+    grid-gap: 20px;
 }
  
-.container-form{
-    width: 100%;
-    max-width: 150px;
-    margin-left: 70px;
- 
-}
-.container-form form .campo, textarea{
-    width: 100%;
+#todoformulario form .campo, textarea{
     padding: 15px 10px;
     font-size: 16px;
     border: 1px solid #dbdbdb;
-    margin-bottom: 20px;
     outline: 0px;
 }
-.container-form form textarea{
-    min-width: 314px;
-    min-height: 140px;
-    max-height: 150px;
+
+#todoformulario form textarea {
+    height: 15rem;
 }
-.container-form .btn-enviar{
+
+#todoformulario form label {
+    align-self: center;
+    justify-self: end;
+}
+
+#todoformulario form label[for='mensaje'] {
+    align-self: start;
+    margin-top: 10px;
+}
+
+#todoformulario .btn-enviar{
     padding: 15px;
-    font-size: 16px;
+    font-size: 1.2rem;
     border: none;
     outline: 0px;
     background: #FFBE01;
     color: black;
     cursor: pointer;
-    padding-right: 200px;
+    grid-column: 2 / 3;
+    text-align: center;
 }
-h1 {
-	color: white;
-}
-p{
-	color: white;
-}
-body{
-	background: black
-}
-.cosa p{
-    margin-top: 5px;
-    margin-bottom: 28px;
-}
-.cosas{
-    padding-bottom: 22px;
-}
-#formulario{
+
+#textoform {
     display: flex;
-    padding-bottom: 300px;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-top: 5.5rem;
 }
-#todoformulario{
-    padding-top: 90px;
-}
+
 #textoform p{
     justify-content: center right;
-    margin-top: 260px;
-    margin-left: 320px;
     text-align: left;
+    margin: 0;
+    font-size: 1.5rem;
+    width: 90%;
 }
 #textoform h3{
-    font-size: 40px;
-    margin-left: 320px;
+    font-size: 2.4rem;
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contactos span {
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contactos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 2.2rem;
+}
+
+.contactos img {
+    height: 100%;
 }

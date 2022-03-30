@@ -6,3 +6,7 @@
   background-size: cover;
   font-family: 'Red Hat Display', sans-serif;
 }
+
+html {
+  font-size: 100%;
+}
