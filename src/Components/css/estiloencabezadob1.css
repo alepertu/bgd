@@ -11,6 +11,10 @@ header {
 	height: 100px;
 }
 
+.boton-menu {
+	display: none;
+}
+
 .logo {
 	margin-left: 7%;
 }
