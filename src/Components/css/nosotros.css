@@ -30,3 +30,23 @@ h3 {
     width: 88%;
     grid-gap: 60px
 }
+
+@media (max-width: 840px) {
+    h2 {
+        font-size: 2.8rem;
+        width: 90%;
+    }
+    h3 {
+        font-size: 2.2rem;
+        width: 90%;
+    }
+    .tecnologias {
+        width: 90%;
+        grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+        margin-bottom: 60px;
+    }
+    .presentaciones {
+        display: flex;
+        flex-direction: column;
+    }
+}

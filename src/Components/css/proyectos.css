@@ -13,3 +13,10 @@ h2 {
     width: 88%;
     grid-gap: 40px
 }
+
+@media (max-width: 840px) {
+    .proyectosreal {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,4 +1,4 @@
-#contacto{
+#contacto {
     margin-left: 7%;
     display: grid;
     padding-top: 88px;
@@ -97,4 +97,44 @@
 
 .contactos img {
     height: 100%;
+}
+
+@media (max-width: 840px) {
+    #contacto {
+        display: flex;
+        flex-direction: column;
+    }
+    #todoformulario h2 {
+        font-size: 2.4rem;
+        width: 90%;
+        margin-left: 0;
+    }
+    #todoformulario form {
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #todoformulario form input, #todoformulario form textarea {
+        width: 90%;
+    }
+    #todoformulario form input[type='submit'] {
+        width: 50%;
+        align-self: center;
+    }
+    #todoformulario form label {
+        align-self: flex-start;
+        margin-top: 0 !important;
+        text-align: left;
+    }
+    #textoform {
+        padding: 0;
+    }
+    .contactos {
+        margin-bottom: 80px;
+    }
+    #textoform h3{
+        font-size: 1.9rem;
+        width: 100%;
+    }
 }

@@ -41,3 +41,34 @@ nav a {
 nav a:hover, .activa{
 	border-bottom: 5px solid #FFBE01; 
 }
+
+@media (max-width: 840px) {
+  header .logo {
+    margin: 0 auto;
+  }
+  header .boton-menu {
+    margin-right: 5%;
+    display: block;
+    height: 40%;
+  }
+  header nav {
+    display: none;
+  }
+  header .menu-abierto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    top: 100px;
+  }
+   .menu-abierto a {
+    padding: 3%;
+    background-color: black;
+    font-weight: normal;
+  }
+  .menu-abierto a:hover, .menu-abierto .activa{
+    border: 0;
+    background-color: #FFBE01;
+    color: black;
+  }
+}

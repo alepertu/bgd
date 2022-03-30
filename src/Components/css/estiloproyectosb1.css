@@ -30,3 +30,9 @@
 	margin: 5px;
 	width: 100%;
 }
+
+@media (max-width: 840px) {
+    .borde h2 {
+			justify-content: center;
+		}
+}
