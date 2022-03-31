@@ -31,6 +31,10 @@ h3 {
     grid-gap: 60px
 }
 
+.tecnologias img {
+    width: 100%;
+}
+
 @media (max-width: 840px) {
     h2 {
         font-size: 2.8rem;

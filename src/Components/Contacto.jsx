@@ -36,22 +36,19 @@ function Contacto() {
         <h3>También puedes...</h3>
         <div className="contactos">
           <span>
-            <a
-              href="https://wa.me/59898381512"
-              target="_blank"
-              rel="noreferrer">
+            <a href="https://wa.me/092421490" target="_blank" rel="noreferrer">
               <img src={wpp} alt="Enviar Whatsapp" />
             </a>
-            +598 98 381 512
+            092 421 490
           </span>
           <span>
             <a
-              href="mailto:bgdesarrollo@gmail.com"
+              href="mailto:bgdesarrollouy@gmail.com"
               target="_blank"
               rel="noreferrer">
               <img src={mail} alt="Enviar Mail" />
             </a>
-            bgdesarrollo@gmail.com
+            bgdesarrollouy@gmail.com
           </span>
         </div>
       </div>

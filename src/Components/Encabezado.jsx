@@ -9,7 +9,9 @@ function Encabezado() {
   return (
     <header>
       <div className="logo">
-        <img src={logo} alt="Logo de BD Desarrollo" />
+        <a href="#inicio">
+          <img src={logo} alt="Logo de BD Desarrollo" />
+        </a>
       </div>
       <img
         onClick={() => setMostrarMenu(!mostrarMenu)}
