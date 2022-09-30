@@ -29,7 +29,7 @@ function Nosotros() {
         realidades.
         <br />
         <br />
-        Nos apasiona el emprendurismo, el trabajo en equipo, y ejecutar
+        Nos apasiona el emprendedurismo, el trabajo en equipo, y ejecutar
         proyectos de calidad para cada uno de nuestros clientes. ¿La clave? Una
         buena comunicación y correcta apreciación del trabajo que quiere
         realizarse.
@@ -56,7 +56,7 @@ function Nosotros() {
       <section className="presentaciones">
         <Presentacion
           persona="Alejandro Pertusatti"
-          bio="Soy Ale, tengo 23 años. Me recibí de Diseñador Gráfico en 2019, y soy un apasionado de la programación. Soy estudiante avanzado de Químico Farmacéutico en UdelaR. Además, trabajo actualmente en Customer Service de Mercado Libre. Me gusta conocer lugares nuevos, y disfruto del tiempo de calidad con mi familia."
+          bio="Soy Ale, tengo 23 años. Me recibí de Diseñador Gráfico en 2019, y soy un apasionado de la programación. Soy estudiante avanzado de Químico Farmacéutico en UdelaR. Además, trabajo actualmente en Fraud Prevention de Mercado Libre. Me gusta conocer lugares nuevos, y disfruto del tiempo de calidad con mi familia."
           perfil={moi}
         />
         <Presentacion
