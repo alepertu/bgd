@@ -1,13 +1,14 @@
 import './css/estilo-contactanosb1.css';
-import wpp from '../images/iconos/whatsapp.svg';
-import mail from '../images/iconos/mail.svg';
+import wpp from '../../public/images/iconos/whatsapp.svg';
+import mail from '../../public/images/iconos/mail.svg';
+import Image from 'next/image';
 
 function Contacto() {
   return (
     <section id="contacto">
       <div id="todoformulario">
         <h2>¡Contáctanos!</h2>
-        <form action="#" autocomplete="off">
+        <form action="#" autoComplete="off">
           <label htmlFor="nombre">Nombre</label>
           <input type="text" name="nombre" id="nombre" className="campo" />
           <label htmlFor="email">E-mail</label>
@@ -36,17 +37,17 @@ function Contacto() {
         <h3>También puedes...</h3>
         <div className="contactos">
           <span>
-            <a href="https://wa.me/092421490" target="_blank" rel="noreferrer">
-              <img src={wpp} alt="Enviar Whatsapp" />
+            <a href="https://wa.me/097827767" target="_blank" rel="noreferrer">
+              <Image src={wpp} alt="Enviar Whatsapp" width={50} height={50} />
             </a>
-            092 421 490
+            097 827 767
           </span>
           <span>
             <a
               href="mailto:bgdesarrollouy@gmail.com"
               target="_blank"
               rel="noreferrer">
-              <img src={mail} alt="Enviar Mail" />
+              <Image src={mail} alt="Enviar Mail" width={50} height={50} />
             </a>
             bgdesarrollouy@gmail.com
           </span>
@@ -55,6 +56,5 @@ function Contacto() {
     </section>
   );
 }
- 
+
 export default Contacto;
- 

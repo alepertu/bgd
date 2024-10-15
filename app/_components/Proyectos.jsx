@@ -1,8 +1,8 @@
 import Proyecto from './Proyecto';
 import './css/proyectos.css';
-import paseuy from '../images/paseuy.jpeg';
-import paseuyapp from '../images/paseuyapp.jpeg';
-import givt from '../images/givt.jpeg';
+import paseuy from '../../public/images/paseuy.jpeg';
+import paseuyapp from '../../public/images/paseuyapp.jpeg';
+import givt from '../../public/images/givt.jpeg';
 
 function Proyectos() {
   return (

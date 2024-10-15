@@ -1,22 +1,23 @@
 import './css/nosotros.css';
 import Presentacion from './Presentacion';
-import ale from '../images/ale.jpeg';
-import moi from '../images/moi.jpeg';
-import moia from '../images/moia.jpeg';
-import apache from '../images/iconos/apache.svg';
-import express from '../images/iconos/express.svg';
-import css from '../images/iconos/css.svg';
-import js from '../images/iconos/js.svg';
-import mongo from '../images/iconos/mongo.svg';
-import html from '../images/iconos/html.svg';
-import mysql from '../images/iconos/mysql.svg';
-import next from '../images/iconos/next.svg';
-import node from '../images/iconos/node.svg';
-import php from '../images/iconos/php.svg';
-import react from '../images/iconos/react.svg';
-import sass from '../images/iconos/sass.svg';
-import webpack from '../images/iconos/webpack.svg';
-import git from '../images/iconos/git.svg';
+import ale from '../../public/images/ale.jpeg';
+import moi from '../../public/images/moi.jpeg';
+import moia from '../../public/images/moia.jpeg';
+import apache from '../../public/images/iconos/apache.svg';
+import express from '../../public/images/iconos/express.svg';
+import css from '../../public/images/iconos/css.svg';
+import js from '../../public/images/iconos/js.svg';
+import mongo from '../../public/images/iconos/mongo.svg';
+import html from '../../public/images/iconos/html.svg';
+import mysql from '../../public/images/iconos/mysql.svg';
+import next from '../../public/images/iconos/next.svg';
+import node from '../../public/images/iconos/node.svg';
+import php from '../../public/images/iconos/php.svg';
+import react from '../../public/images/iconos/react.svg';
+import sass from '../../public/images/iconos/sass.svg';
+import webpack from '../../public/images/iconos/webpack.svg';
+import git from '../../public/images/iconos/git.svg';
+import Image from 'next/image';
 
 function Nosotros() {
   return (
@@ -36,20 +37,20 @@ function Nosotros() {
       </p>
       <h3>Nuestras tecnologías</h3>
       <section className="tecnologias">
-        <img src={html} alt="Logo HTML"></img>
-        <img src={js} alt="Logo Javascript"></img>
-        <img src={react} alt="Logo React"></img>
-        <img src={express} alt="Logo Express.js"></img>
-        <img src={mysql} alt="Logo MySQL"></img>
-        <img src={next} alt="Logo Next.js"></img>
-        <img src={sass} alt="Logo SASS"></img>
-        <img src={css} alt="Logo CSS"></img>
-        <img src={php} alt="Logo PHP"></img>
-        <img src={node} alt="Logo Node.js"></img>
-        <img src={mongo} alt="Logo MongoDB"></img>
-        <img src={webpack} alt="Logo Webpack"></img>
-        <img src={git} alt="Logo Git"></img>
-        <img src={apache} alt="Logo Apache"></img>
+        <Image src={html} alt="Logo HTML" width={100} height={100} />
+        <Image src={js} alt="Logo Javascript" width={100} height={100} />
+        <Image src={react} alt="Logo React" width={100} height={100} />
+        <Image src={express} alt="Logo Express.js" width={100} height={100} />
+        <Image src={mysql} alt="Logo MySQL" width={100} height={100} />
+        <Image src={next} alt="Logo Next.js" width={100} height={100} />
+        <Image src={sass} alt="Logo SASS" width={100} height={100} />
+        <Image src={css} alt="Logo CSS" width={100} height={100} />
+        <Image src={php} alt="Logo PHP" width={100} height={100} />
+        <Image src={node} alt="Logo Node.js" width={100} height={100} />
+        <Image src={mongo} alt="Logo MongoDB" width={100} height={100} />
+        <Image src={webpack} alt="Logo Webpack" width={100} height={100} />
+        <Image src={git} alt="Logo Git" width={100} height={100} />
+        <Image src={apache} alt="Logo Apache" width={100} height={100} />
       </section>
 
       <h3>Sobre nosotros</h3>

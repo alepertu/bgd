@@ -1,7 +1,8 @@
 import './css/estiloencabezadob1.css';
-import logo from '../images/logobgdesarrollo.png';
-import menu from '../images/iconos/menu.svg';
-import React, { useState } from 'react';
+import logo from '../../public/images/logobgdesarrollo.png';
+import menu from '../../public/images/iconos/menu.svg';
+import { useState } from 'react';
+import Image from 'next/image';
 
 function Encabezado() {
   let [opcion, setOpcion] = useState('inicio');
@@ -10,14 +11,21 @@ function Encabezado() {
     <header>
       <div className="logo">
         <a href="#inicio">
-          <img src={logo} alt="Logo de BD Desarrollo" />
+          <Image
+            src={logo}
+            alt="Logo de BD Desarrollo"
+            width={300}
+            height={200}
+          />
         </a>
       </div>
-      <img
+      <Image
         onClick={() => setMostrarMenu(!mostrarMenu)}
         className="boton-menu"
         src={menu}
         alt="Botón para abrir menú"
+        width={50}
+        height={50}
       />
       <nav className={mostrarMenu ? 'menu-abierto' : null}>
         <a
