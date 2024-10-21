@@ -8,7 +8,7 @@ import Contacto from './_components/Contacto.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-center bg-no-repeat bg-fixed bg-cover App">
       <Encabezado />
       <Inicio />
       <Nosotros />
