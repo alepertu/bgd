@@ -1,3 +1,4 @@
+import React from 'react';
 import './index.css';
 import { Red_Hat_Display } from 'next/font/google';
 

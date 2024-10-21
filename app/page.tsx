@@ -5,6 +5,7 @@ import Inicio from './_components/Inicio.jsx';
 import Nosotros from './_components/Nosotros.jsx';
 import Proyectos from './_components/Proyectos.jsx';
 import Contacto from './_components/Contacto.jsx';
+import React from 'react';
 
 function App() {
   return (
