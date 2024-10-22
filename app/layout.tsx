@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
-import { Red_Hat_Display } from 'next/font/google';
+import { Hanken_Grotesk } from 'next/font/google';
 
-const rhd = Red_Hat_Display({
+const hanken_grotesk = Hanken_Grotesk({
   weight: ['300', '400', '500', '700', '900'],
   subsets: ['latin'],
 });
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`m-0 ${rhd.className}`}>
+      <body className={`m-0 ${hanken_grotesk.className}`}>
         <div id="root">{children}</div>
       </body>
     </html>
