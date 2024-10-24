@@ -3,13 +3,13 @@ import './index.css';
 import { Hanken_Grotesk } from 'next/font/google';
 
 const hanken_grotesk = Hanken_Grotesk({
-  weight: ['300', '400', '500', '700', '900'],
   subsets: ['latin'],
 });
 
 export const metadata = {
-  title: 'BG Desarrollo',
-  description: 'BG Desarrollo is a software development company.',
+  title: 'Tus ideas hechas realidad | PYA DEVS',
+  description:
+    'Desarrollamos la web para tu emprendimiento, y hacemos que tus ideas se vuelvan realidad.',
 };
 
 export default function RootLayout({ children }) {
