@@ -8,15 +8,15 @@ const navItems = ['inicio', 'nosotros', 'proyectos', 'contacto'];
 export default function Header() {
   let [mostrarMenu, setMostrarMenu] = useState(false);
   return (
-    <header className="flex h-20 w-full p-4 items-center fixed top-0 left-0 bg-white">
+    <header className="flex h-20 z-50 w-full p-4 items-center fixed top-0 left-0 bg-uy-blue-50">
       <a href="#inicio">
         <Image src={logo} alt="PYA DEVS Logo" width={50} height={50} />
       </a>
       <div className="w-full flex flex-col items-end">
         <a
-          className="bg-black py-1 px-3 rounded mr-3 no-underline text-white font-semibold hover:bg-blue"
+          className="bg-black py-1 px-3 rounded mr-3 no-underline text-white font-semibold border-2 border-transparent hover:text-black transition-all hover:bg-transparent hover:border-black"
           href="#contacto">
-          Contáctanos
+          Contactanos
         </a>
       </div>
       <button
@@ -37,7 +37,7 @@ export default function Header() {
             onClick={() => {
               setMostrarMenu(false);
             }}
-            className={`no-underline border-2 bg-white w-3/4 rounded-lg text-2xl mx-auto text-left my-3 px-4 py-3 hover:border-black`}>
+            className={`no-underline border-2 border-transparent bg-white w-3/4 rounded-lg text-2xl mx-auto text-left my-2 px-4 py-3 hover:border-black`}>
             {item}
           </a>
         ))}
