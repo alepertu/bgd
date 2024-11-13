@@ -6,6 +6,7 @@ import Contacto from './_components/Contacto.jsx';
 
 import React from 'react';
 import Header from './_components/Header.tsx';
+import MainCard from './_components/MainCard.tsx';
 
 function App() {
   return (
@@ -17,13 +18,13 @@ function App() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 480 480"
-          className="absolute top-36 -left-8 rotate-90 fill-uy-yellow-200 w-3/12">
+          className="absolute top-36 -z-10 -left-8 rotate-90 fill-uy-yellow-200 w-3/12">
           <path d="M360 240c-66.3 0-120-53.7-120-120a120 120 0 1 0-120 120c66.3 0 120 53.7 120 120a120 120 0 1 0 120-120Z"></path>
         </svg>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 480 480"
-          className="absolute top-40 rotate-12 -right-12 fill-uy-blue-50 w-3/12">
+          className="absolute top-40 -z-10 rotate-12 -right-12 fill-uy-blue-50 w-3/12">
           <path d="M240 0H0a240 240 0 0 0 240 240h240A240 240 0 0 0 240 0ZM240 240H0a240 240 0 0 0 240 240h240a240 240 0 0 0-240-240Z"></path>
         </svg>
         <svg
@@ -45,6 +46,23 @@ function App() {
           href="#contacto">
           Contános tu idea
         </a>
+        <div className="relative top-10 h-1/3">
+          <MainCard
+            order={1}
+            title="Tienda online"
+            desc='"Quiero mi tienda online para potenciar mis ventas y llegar a más clientes."'
+          />
+          <MainCard
+            order={2}
+            title="Landing Page"
+            desc='"Quiero una página donde presentar mi producto y mostrar todos los servicios que ofrezco."'
+          />
+          <MainCard
+            order={3}
+            title="Blog personal"
+            desc='"Quiero un lugar donde poder expresarme y contarle a mis seguidores lo que pienso."'
+          />
+        </div>
       </main>
       <Nosotros />
       <Proyectos />
