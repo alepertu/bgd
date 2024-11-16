@@ -63,7 +63,7 @@ function App() {
               desc='"Quiero un lugar donde poder expresarme y contarle a mis seguidores lo que pienso."'
             />
           </div>
-          <span className="absolute bottom-0 left-0 w-full h-5 border-b-2 border-white bg-white rounded-t-full z-10"></span>
+          <span className="absolute bottom-0 left-0 w-full h-4 border-b-2 border-white bg-white rounded-t-full z-10"></span>
         </Section>
         <Section id="nosotros">
           <h2>¡Hola!</h2>
