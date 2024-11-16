@@ -57,10 +57,10 @@ export default function MainCard({
         color: animations.colors[order - 1],
       }}
       className={`h-80 w-80 rounded-3xl absolute flex flex-col p-6 text-left z-[${order}]`}>
-      <h3 className="text-2xl font-bold w-full text-inherit flex items-center">
+      <h3 className="text-xl font-bold w-full text-inherit flex items-center select-none">
         <TiLightbulb className="mr-1" /> {title}
       </h3>
-      <span className="text-lg mt-2 leading-5">{desc}</span>
+      <span className="text-md mt-2 leading-5">{desc}</span>
     </motion.div>
   );
 }
