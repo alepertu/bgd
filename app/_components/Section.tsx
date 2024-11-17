@@ -7,7 +7,7 @@ export default function Section({
 }) {
   return (
     <section
-      className="text-center relative overflow-hidden w-full flex-col place-content-center h-svh px-6 rounded-t-full"
+      className="text-center relative overflow-hidden w-full flex-col place-content-center h-lvh px-6 rounded-t-full"
       id={id}>
       {children}
     </section>
