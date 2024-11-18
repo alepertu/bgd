@@ -9,7 +9,9 @@ export default function Section({
 }) {
   return (
     <section
-      className={`text-center relative overflow-hidden w-full h-lvh px-6 ${customizations}`}
+      className={`text-center relative flex flex-col overflow-hidden w-full h-lvh md:h-auto px-6${
+        customizations ? ' ' + customizations : ''
+      }`}
       id={id}>
       {children}
     </section>

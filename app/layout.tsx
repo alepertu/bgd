@@ -14,8 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
-      <body className={`m-0 ${hanken_grotesk.className}`}>
+    <html className="h-full" lang="es">
+      <body className={`m-0 h-full ${hanken_grotesk.className}`}>
         <div id="root">{children}</div>
       </body>
     </html>

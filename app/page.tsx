@@ -4,7 +4,6 @@ import Proyectos from './_components/Proyectos.jsx';
 import Contacto from './_components/Contacto.jsx';
 
 import React from 'react';
-import { motion } from 'motion/react';
 import Header from './_components/Header.tsx';
 import MainCard from './_components/MainCard.tsx';
 import Section from './_components/Section.tsx';
@@ -15,7 +14,7 @@ function App() {
       <Header />
       <main>
         <Section id="inicio">
-          <div className="relative h-1/2 flex flex-col place-content-end gap-2">
+          <div className="relative h-1/2 md:h-lvh flex flex-col place-content-end md:place-content-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 480 480"
@@ -48,7 +47,7 @@ function App() {
               Contános tu idea
             </a>
           </div>
-          <div className="relative h-1/2 top-10">
+          <div className="relative h-1/2 md:h-lvh top-10">
             <MainCard
               order={1}
               title="Tienda online"
@@ -65,9 +64,11 @@ function App() {
               desc='"Quiero un lugar donde poder expresarme y contarle a mis seguidores lo que pienso."'
             />
           </div>
-          <span className="absolute bottom-0 left-0 w-full h-4 border-b-2 border-white bg-white rounded-t-full z-10"></span>
+          <span
+            className="absolute bottom-0 left-0 w-full h-4 border-b-2 border-white bg-white rounded-t-full z-10"
+            aria-hidden="true"></span>
         </Section>
-        <Section id="nosotros" customizations="rounded-t-full">
+        <Section id="nosotros">
           <h2>¡Hola!</h2>
           <p>
             Somos una empresa uruguaya que busca instalarse en el mercado del
