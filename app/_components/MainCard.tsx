@@ -1,18 +1,12 @@
 import { motion } from 'motion/react';
 import { TiLightbulb } from 'react-icons/ti';
 
+const customizations = ['left-0', 'left-[10%]', 'left-[20%]'];
+
 const animations = {
   initialRotation: ['-4deg', '2deg', '10deg'],
-  initialPosition: [
-    { left: '-2rem', top: '300px' },
-    { left: '1rem', top: '350px' },
-    { left: '4rem', top: '400px' },
-  ],
-  finalPosition: [
-    { left: '-1rem', top: '10px' },
-    { left: '1rem', top: '130px' },
-    { left: '3rem', top: '250px' },
-  ],
+  initialPosition: [{ top: '300px' }, { top: '350px' }, { top: '400px' }],
+  finalPosition: [{ top: '10px' }, { top: '130px' }, { top: '250px' }],
   colors: ['#BCC6FF', '#FFF9E0', '#FFD7AE'],
   hoverRotation: ['-3deg', '1deg', '9deg'],
   hoverPosition: [{ top: '-10px' }, { top: '100px' }, { top: '220px' }],
@@ -31,7 +25,6 @@ export default function MainCard({
     <motion.div
       initial={{
         rotate: animations.initialRotation[order - 1],
-        left: animations.initialPosition[order - 1].left,
         top: animations.initialPosition[order - 1].top,
         backgroundColor: animations.colors[order - 1],
         color: 'black',
@@ -56,11 +49,13 @@ export default function MainCard({
         backgroundColor: 'black',
         color: animations.colors[order - 1],
       }}
-      className={`h-80 w-80 select-none rounded-3xl absolute flex flex-col p-6 text-left z-[${order}]`}>
-      <h3 className="text-xl font-bold w-full text-inherit flex items-center">
+      className={`w-4/5 aspect-square ${
+        customizations[order - 1]
+      } -translate-x-1/2 select-none rounded-3xl absolute flex flex-col p-6 text-left z-[${order}]`}>
+      <h3 className="text-xl md:text-2xl font-bold w-full text-inherit flex items-center">
         <TiLightbulb className="mr-1" /> {title}
       </h3>
-      <span className="text-md mt-2 leading-5">{desc}</span>
+      <span className="text-md md:text-xl mt-2 leading-5">{desc}</span>
     </motion.div>
   );
 }
