@@ -44,7 +44,7 @@ function App() {
             <a
               className="bg-black py-2 px-4 text-xl rounded no-underline mx-auto text-white font-semibold border-2 border-transparent hover:text-black transition-all hover:bg-transparent hover:border-black"
               href="#contacto">
-              Contános tu idea
+              Contanos tu idea
             </a>
           </div>
           <div className="relative h-1/2 md:h-96 top-10 md:top-0">
@@ -69,21 +69,15 @@ function App() {
             aria-hidden="true"></span>
         </Section>
         <Section id="nosotros">
-          <h2>¡Hola!</h2>
-          <p>
-            Somos una empresa uruguaya que busca instalarse en el mercado del
-            software. Nos caracterizamos por asumir nuevos desafíos, contando
-            con las herramientas y el conocimiento para convertir tus ideas en
-            realidades.
-            <br />
-            <br />
-            Nos apasiona el emprendedurismo, el trabajo en equipo, y ejecutar
-            proyectos de calidad para cada uno de nuestros clientes. ¿La clave?
-            Una buena comunicación y correcta apreciación del trabajo que quiere
-            realizarse.
-          </p>
-          <h3>Nuestras tecnologías</h3>
-          <h3>Sobre nosotros</h3>
+          <div className="relative h-1/2 md:h-auto md:py-32 flex flex-col py-10 md:place-content-center gap-2">
+            <h1 className="text-2xl md:text-4xl font-bold px-6 tracking-tight">
+              Ellos confiaron en nosotros. ¿Vos qué estás esperando?
+            </h1>
+            <p className="text-lg mt-4 mb-6 w-3/4 mx-auto tracking-tight leading-6 text-balance">
+              Hace crecer tu negocio, mostrá tu producto, o contá tu historia.
+              Nosotros te ayudamos.
+            </p>
+          </div>
         </Section>
       </main>
       <Proyectos />
