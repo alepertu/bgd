@@ -1,23 +1,23 @@
-import './css/nosotros.css';
-import Presentacion from './Presentacion';
-import ale from '../../public/images/ale.jpeg';
-import moi from '../../public/images/moi.jpeg';
-import moia from '../../public/images/moia.jpeg';
-import apache from '../../public/images/iconos/apache.svg';
-import express from '../../public/images/iconos/express.svg';
-import css from '../../public/images/iconos/css.svg';
-import js from '../../public/images/iconos/js.svg';
-import mongo from '../../public/images/iconos/mongo.svg';
-import html from '../../public/images/iconos/html.svg';
-import mysql from '../../public/images/iconos/mysql.svg';
-import next from '../../public/images/iconos/next.svg';
-import node from '../../public/images/iconos/node.svg';
-import php from '../../public/images/iconos/php.svg';
-import react from '../../public/images/iconos/react.svg';
-import sass from '../../public/images/iconos/sass.svg';
-import webpack from '../../public/images/iconos/webpack.svg';
-import git from '../../public/images/iconos/git.svg';
-import Image from 'next/image';
+import "./css/nosotros.css";
+import Presentacion from "./Presentacion";
+import ale from "../../public/images/ale.jpeg";
+import moi from "../../public/images/moi.jpeg";
+import moia from "../../public/images/moia.jpeg";
+import apache from "../../public/images/iconos/apache.svg";
+import express from "../../public/images/iconos/express.svg";
+import css from "../../public/images/iconos/css.svg";
+import js from "../../public/images/iconos/js.svg";
+import mongo from "../../public/images/iconos/mongo.svg";
+import html from "../../public/images/iconos/html.svg";
+import mysql from "../../public/images/iconos/mysql.svg";
+import next from "../../public/images/iconos/next.svg";
+import node from "../../public/images/iconos/node.svg";
+import php from "../../public/images/iconos/php.svg";
+import react from "../../public/images/iconos/react.svg";
+import sass from "../../public/images/iconos/sass.svg";
+import webpack from "../../public/images/iconos/webpack.svg";
+import git from "../../public/images/iconos/git.svg";
+import Image from "next/image";
 
 function Nosotros() {
   return (
