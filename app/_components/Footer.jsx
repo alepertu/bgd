@@ -2,7 +2,7 @@ import { FaInstagram, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-uy-blue-50 p-10 text-center text-black">
+    <footer className="bg-[#a5c8d8] p-10 text-center text-gray-900">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <p className="text-lg font-semibold">
           &copy; {new Date().getFullYear()} PYA. Todos los derechos reservados.

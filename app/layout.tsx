@@ -1,15 +1,19 @@
-import React from 'react';
-import './index.css';
-import { Hanken_Grotesk } from 'next/font/google';
+import React from "react";
+import "./index.css";
+import { Space_Grotesk, Hanken_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+});
 
 const hanken_grotesk = Hanken_Grotesk({
-  subsets: ['latin'],
+  subsets: ["latin"],
 });
 
 export const metadata = {
-  title: 'Tus ideas hechas realidad | PYA DEVS',
+  title: "Tus ideas hechas realidad | PYA DEVS",
   description:
-    'Desarrollamos la web para tu emprendimiento, y hacemos que tus ideas se vuelvan realidad.',
+    "Desarrollamos la web para tu emprendimiento, y hacemos que tus ideas se vuelvan realidad.",
 };
 
 export default function RootLayout({ children }) {

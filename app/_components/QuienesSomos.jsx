@@ -4,14 +4,14 @@ import pia from "../../public/images/moia.jpeg";
 
 function QuienesSomos() {
   return (
-    <section className="bg-white p-6 md:p-20 text-black flex flex-col items-center justify-center min-h-screen">
+    <section className="bg-white p-6 md:p-20 text-black flex flex-col items-center justify-center min-h-screen relative">
       <div className="mb-8 md:mb-12 text-center w-full">
         <h2 className="text-3xl md:text-6xl font-bold text-black">
           Pero... ¿Quiénes somos?
         </h2>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-10 w-full max-w-4xl justify-center">
+      <div className="flex flex-col md:flex-row gap-10 w-full max-w-4xl justify-center mb-24">
         <div className="bg-gray-100 rounded-2xl w-full max-w-sm text-left flex flex-col items-start overflow-hidden">
           <Image
             src={ale}
@@ -58,6 +58,26 @@ function QuienesSomos() {
           </div>
         </div>
       </div>
+
+      {/* Versión MOBILE */}
+      <svg
+        className="block md:hidden absolute bottom-0 left-0 w-full h-20 z-10 pointer-events-none"
+        viewBox="0 0 100 20"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path d="M0,20 Q50,5 100,20 V20 H0 Z" fill="#e1edf2" />
+      </svg>
+
+      {/* Versión DESKTOP */}
+      <svg
+        className="hidden md:block absolute bottom-0 left-0 w-full h-36 z-10 pointer-events-none"
+        viewBox="0 0 100 40"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path d="M0,40 Q50,-10 100,40 V40 H0 Z" fill="#e1edf2" />
+      </svg>
     </section>
   );
 }

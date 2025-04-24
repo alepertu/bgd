@@ -5,28 +5,49 @@
   */
 }
 
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { useState } from "react";
 import Image from "next/image";
+import ModalProyecto from "./ModalProyecto";
+import { motion } from "framer-motion";
 
 function Proyecto({ img, nombre, descrip, link }) {
+  const [open, setOpen] = useState(false);
+  const [hover, setHover] = useState(false);
+
   return (
-    <div className="w-80 border-2 border-black rounded-xl overflow-hidden flex flex-col items-center p-4">
-      <div className="w-full">
+    <>
+      <div
+        className="relative w-80 h-96 overflow-hidden rounded-2xl group cursor-pointer"
+        onClick={() => setOpen(true)}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
         <Image
-          className="w-full h-auto object-cover rounded-xl"
           src={img}
           alt={`Captura de pantalla de ${nombre}`}
-          layout="intrinsic"
+          layout="fill"
+          objectFit="cover"
+          className="transition-transform duration-300"
         />
+
+        <motion.div
+          initial={{ y: "100%" }}
+          animate={{ y: hover ? 0 : "100%" }}
+          transition={{ duration: 0.25 }}
+          className="absolute bottom-0 left-0 w-full h-28 bg-[#e1edf2] text-black flex items-center justify-center rounded-t-[100px] overflow-hidden"
+        >
+          <span className="text-xl font-semibold">Saber más</span>
+        </motion.div>
       </div>
-      <h2 className="text-xl font-semibold mt-4 flex items-center gap-2 text-black">
-        {nombre}
-        <a href={link} target="_blank" rel="noreferrer" className="text-black">
-          <FaExternalLinkAlt size={20} />
-        </a>
-      </h2>
-      <p className="text-gray-600 text-center mt-2 px-4">{descrip}</p>
-    </div>
+
+      <ModalProyecto
+        open={open}
+        onClose={() => setOpen(false)}
+        nombre={nombre}
+        descrip={descrip}
+        link={link}
+      />
+    </>
   );
 }
 

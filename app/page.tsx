@@ -39,22 +39,26 @@ function App() {
             >
               <path d="M197.6 42.4 42.4 197.6a60 60 0 0 0 0 84.8l155.2 155.2a60 60 0 0 0 84.8 0l155.2-155.2a60 60 0 0 0 0-84.8L282.4 42.4a60 60 0 0 0-84.8 0Z"></path>
             </svg>
-            <h1 className="text-3xl md:text-4xl font-bold px-8 tracking-tight">
-              Convertimos tu idea en realidad
-            </h1>
-            <p className="text-lg mt-4 mb-6 tracking-tight leading-6 text-balance">
-              Desarrollamos aplicaciones web para emprendedores y start-ups.{" "}
-              <b>Creamos tu producto digital desde cero</b> o mejoramos el que
-              ya tenés.
-            </p>
-            <a
-              className="bg-black py-2 px-4 text-xl rounded no-underline mx-auto text-white font-semibold border-2 border-transparent hover:text-black transition-all hover:bg-transparent hover:border-black"
-              href="#contacto"
-            >
-              Contanos tu idea
-            </a>
+
+            <div className="flex flex-col py-24">
+              <h1 className="text-4xl md:text-5xl font-bold px-8 tracking-tight">
+                Convertimos tu idea en realidad
+              </h1>
+              <p className="text-xl mt-4 mb-6 tracking-tight leading-6 text-balance">
+                Desarrollamos aplicaciones web para emprendedores y start-ups.
+                <br />
+                <b>Creamos tu producto digital desde cero</b> o mejoramos el que
+                ya tenés.
+              </p>
+              <a
+                className="bg-black py-3 px-6 text-xl rounded-xl no-underline mx-auto text-white font-semibold border-2 border-transparent hover:text-black transition-all hover:bg-transparent hover:border-black"
+                href="#contacto"
+              >
+                Contanos tu idea
+              </a>
+            </div>
           </div>
-          <div className="relative h-1/2 md:h-96 top-10 md:top-0">
+          <div className="relative h-1/2 md:h-96 top-10 md:top-0 md:flex md:justify-center md:items-center md:px-12">
             <MainCard
               order={1}
               title="Tienda online"
@@ -71,11 +75,28 @@ function App() {
               desc='"Quiero un lugar donde poder expresarme y contarle a mis seguidores lo que pienso."'
             />
           </div>
-          <span
-            className="absolute bottom-0 left-0 w-full h-4 border-b-2 border-white bg-white rounded-t-full z-10"
+
+          {/* Versión MOBILE */}
+          <svg
+            className="block md:hidden absolute bottom-0 left-0 w-full h-20 z-10 pointer-events-none"
+            viewBox="0 0 100 20"
+            preserveAspectRatio="none"
             aria-hidden="true"
-          ></span>
+          >
+            <path d="M0,20 Q50,5 100,20 V20 H0 Z" fill="white" />
+          </svg>
+
+          {/* Versión DESKTOP */}
+          <svg
+            className="hidden md:block absolute bottom-0 left-0 w-full h-36 z-10 pointer-events-none"
+            viewBox="0 0 100 40"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path d="M0,40 Q50,-10 100,40 V40 H0 Z" fill="white" />
+          </svg>
         </Section>
+
         {/*
         <Section id="nosotros">
           <div className="relative h-1/2 md:h-auto md:py-32 flex flex-col py-10 md:place-content-center gap-2">
@@ -89,19 +110,20 @@ function App() {
           </div>
         </Section>
         */}
+
+        <Proyectos />
+        <QuienesSomos />
+        <Planes />
+        <Contacto />
+        <div className="bg-[#a5c8d8] text-center p-6 md:p-20">
+          <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
+            Llevá tu idea al siguiente nivel.
+          </h2>
+          <p className="text-base md:text-lg text-gray-700 mt-4 md:mt-6 max-w-2xl mx-auto">
+            Transformamos tu visión en una web que impacta. Empezá hoy.
+          </p>
+        </div>
       </main>
-      <Proyectos />
-      <QuienesSomos />
-      <Planes />
-      <Contacto />
-      <div className="bg-white text-center p-6 md:p-20">
-        <h2 className="text-3xl md:text-6xl font-bold text-black">
-          Llevá tu idea al siguiente nivel.
-        </h2>
-        <p className="text-base md:text-lg text-gray-600 mt-4 md:mt-6 max-w-2xl mx-auto">
-          Transformamos tu visión en una web que impacta. Empezá hoy.
-        </p>
-      </div>
       <Footer />
     </div>
   );
