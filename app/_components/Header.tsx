@@ -66,13 +66,13 @@ export default function Header() {
   const [mostrarMenu, setMostrarMenu] = useState(false);
 
   return (
-    <header className="flex h-20 z-50 w-full p-4 items-center fixed top-0 left-0 bg-uy-blue-50">
-      <a href="#inicio" className="h-full">
+    <header className="flex h-16 md:h-20 z-50 w-full px-4 md:px-6 items-center fixed top-0 left-0 bg-uy-blue-50 shadow-sm">
+      <a href="#inicio" className="h-10 md:h-12 flex items-center">
         <Logo />
       </a>
       <div className="w-full flex flex-col items-end">
         <a
-          className="bg-black py-1 px-3 rounded mr-3 no-underline text-white font-semibold border-2 border-transparent hover:text-black transition-all hover:bg-transparent hover:border-black"
+          className="bg-black py-1.5 md:py-2 px-4 md:px-6 rounded-lg mr-3 no-underline text-white text-sm md:text-base font-semibold border-2 border-transparent hover:text-black transition-all hover:bg-transparent hover:border-black"
           href="#contacto">
           Contactanos
         </a>
@@ -85,7 +85,7 @@ export default function Header() {
 
       {/* Navigation overlay */}
       <div
-        className={`fixed inset-0 bg-uy-blue-50 top-20 ${
+        className={`fixed inset-0 bg-uy-blue-50 top-16 md:top-20 ${
           mostrarMenu ? 'block' : 'hidden'
         }`}>
         <nav className="h-full overflow-y-auto px-4 pb-20">

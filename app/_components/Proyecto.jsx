@@ -17,26 +17,24 @@ function Proyecto({ img, nombre, descrip, link }) {
   return (
     <>
       <div
-        className="relative w-80 h-96 overflow-hidden rounded-2xl group cursor-pointer"
+        className="relative w-full md:w-80 h-72 md:h-96 overflow-hidden rounded-2xl group cursor-pointer mb-6 md:mb-0 shadow-md hover:shadow-xl transition-shadow duration-300"
         onClick={() => setOpen(true)}
         onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
+        onMouseLeave={() => setHover(false)}>
         <Image
           src={img}
           alt={`Captura de pantalla de ${nombre}`}
           layout="fill"
           objectFit="cover"
-          className="transition-transform duration-300"
+          className="transition-transform duration-500 group-hover:scale-105"
         />
 
         <motion.div
-          initial={{ y: "100%" }}
-          animate={{ y: hover ? 0 : "100%" }}
-          transition={{ duration: 0.25 }}
-          className="absolute bottom-0 left-0 w-full h-28 bg-[#e1edf2] text-black flex items-center justify-center rounded-t-[100px] overflow-hidden"
-        >
-          <span className="text-xl font-semibold">Saber más</span>
+          initial={{ y: '100%' }}
+          animate={{ y: hover ? 0 : '100%' }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+          className="absolute bottom-0 left-0 w-full h-28 bg-[#e1edf2]/95 backdrop-blur-sm text-black flex items-center justify-center rounded-t-[100px] overflow-hidden">
+          <span className="text-xl font-semibold tracking-wide">Saber más</span>
         </motion.div>
       </div>
 
