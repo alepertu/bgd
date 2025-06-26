@@ -27,7 +27,7 @@ export default function MainCard({
         rotate: animations.initialRotation[order - 1],
         top: animations.initialPosition[order - 1].top,
         backgroundColor: animations.colors[order - 1],
-        color: "black",
+        color: 'black',
         opacity: 0,
       }}
       animate={{
@@ -39,20 +39,19 @@ export default function MainCard({
         scale: 1.05,
         rotate: animations.hoverRotation[order - 1],
         top: animations.hoverPosition[order - 1].top,
-        backgroundColor: "black",
+        backgroundColor: 'black',
         color: animations.colors[order - 1],
       }}
       whileTap={{
         scale: 1.05,
         rotate: animations.hoverRotation[order - 1],
         top: animations.hoverPosition[order - 1].top,
-        backgroundColor: "black",
+        backgroundColor: 'black',
         color: animations.colors[order - 1],
       }}
-      className={`w-4/5 aspect-square ${
+      className={`w-4/5 md:w-[30%] max-w-md aspect-[4/3] ${
         customizations[order - 1]
-      } -translate-x-1/2 select-none rounded-3xl absolute md:static flex flex-col p-6 text-left z-[${order}]`}
-    >
+      } -translate-x-1/2 select-none rounded-3xl absolute md:static flex flex-col p-6 text-left z-[${order}]`}>
       <h3 className="text-xl md:text-2xl font-bold w-full text-inherit flex items-center">
         <TiLightbulb className="mr-1" /> {title}
       </h3>

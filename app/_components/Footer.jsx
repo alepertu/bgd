@@ -26,17 +26,17 @@ function Footer() {
         </nav>
         <div className="flex space-x-4">
           <a
-            href="#"
+            href="https://instagram.com/pya.devs"
             className="text-xl md:text-2xl hover:text-white transition-colors">
             <FaInstagram />
           </a>
           <a
-            href="mailto:correo@example.com"
+            href="mailto:info@pya.uy"
             className="text-xl md:text-2xl hover:text-white transition-colors">
             <FaEnvelope />
           </a>
           <a
-            href="https://wa.me/123456789"
+            href="https://wa.me/+59897827767"
             className="text-xl md:text-2xl hover:text-white transition-colors">
             <FaWhatsapp />
           </a>

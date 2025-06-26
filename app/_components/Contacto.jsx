@@ -1,15 +1,6 @@
 import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
 import { useState } from 'react';
 
-{
-  /*
-  import "./css/estilo-contactanosb1.css";
-  import wpp from "../../public/images/iconos/whatsapp.svg";
-  import mail from "../../public/images/iconos/mail.svg";
-  import Image from "next/image";
-  */
-}
-
 function Contacto() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -57,8 +48,10 @@ function Contacto() {
       <div className="flex flex-col md:flex-row items-start justify-center gap-8 md:gap-12 max-w-5xl mx-auto">
         <div className="w-full md:w-2/3">
           <div className="mb-6 md:mb-8 lg:mb-12 text-center w-full">
-            <h2 className="text-2xl md:text-3xl lg:text-6xl font-bold text-gray-900">
-              ¡Contáctanos!
+            <h2
+              className="text-2xl md:text-3xl lg:text-6xl font-bold text-gray-900"
+              id="form-contacto">
+              ¡Contactanos!
             </h2>
             <p className="text-sm md:text-base lg:text-lg text-gray-700 mt-3 md:mt-4 lg:mt-6 max-w-2xl mx-auto">
               Comparte tu idea con nosotros, queremos escucharte.

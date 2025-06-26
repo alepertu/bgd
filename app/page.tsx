@@ -50,7 +50,7 @@ function App() {
                 </p>
                 <a
                   className="bg-black py-3 px-8 text-lg md:text-xl rounded-xl no-underline mx-auto text-white font-semibold border-2 border-transparent hover:text-black transition-all duration-300 hover:bg-transparent hover:border-black shadow-sm hover:shadow-md"
-                  href="#contacto">
+                  href="#form-contacto">
                   Contanos tu idea
                 </a>
               </div>
@@ -64,7 +64,7 @@ function App() {
               />
               <MainCard
                 order={2}
-                title="Landing Page"
+                title="Landing page"
                 desc='"Quiero una página donde presentar mi producto y mostrar todos los servicios que ofrezco."'
               />
               <MainCard
@@ -93,20 +93,6 @@ function App() {
             </svg>
           </div>
         </Section>
-
-        {/*
-        <Section id="nosotros">
-          <div className="relative h-1/2 md:h-auto md:py-32 flex flex-col py-10 md:place-content-center gap-2">
-            <h1 className="text-2xl md:text-4xl font-bold px-6 tracking-tight">
-              Ellos confiaron en nosotros. ¿Vos qué estás esperando?
-            </h1>
-            <p className="text-lg mt-4 mb-6 w-3/4 mx-auto tracking-tight leading-6 text-balance">
-              Hace crecer tu negocio, mostrá tu producto, o contá tu historia.
-              Nosotros te ayudamos.
-            </p>
-          </div>
-        </Section>
-        */}
 
         <Proyectos />
         <QuienesSomos />

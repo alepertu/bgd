@@ -73,7 +73,7 @@ export default function Header() {
       <div className="w-full flex flex-col items-end">
         <a
           className="bg-black py-1.5 md:py-2 px-4 md:px-6 rounded-lg mr-3 no-underline text-white text-sm md:text-base font-semibold border-2 border-transparent hover:text-black transition-all hover:bg-transparent hover:border-black"
-          href="#contacto">
+          href="#form-contacto">
           Contactanos
         </a>
       </div>
