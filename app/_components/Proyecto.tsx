@@ -1,16 +1,21 @@
-{
-  /*
-  import "./css/estiloproyectosb1.css";
-  import external from "../../public/images/iconos/external.svg";
-  */
-}
+import { useState } from 'react';
+import Image, { StaticImageData } from 'next/image';
+import ModalProyecto from './ModalProyecto';
+import { motion } from 'framer-motion';
 
-import { useState } from "react";
-import Image from "next/image";
-import ModalProyecto from "./ModalProyecto";
-import { motion } from "framer-motion";
-
-function Proyecto({ img, nombre, descrip, link }) {
+function Proyecto({
+  img,
+  nombre,
+  lema,
+  descrip,
+  link,
+}: {
+  img: StaticImageData;
+  nombre: string;
+  lema: string;
+  descrip: string;
+  link: string;
+}) {
   const [open, setOpen] = useState(false);
   const [hover, setHover] = useState(false);
 
@@ -42,6 +47,7 @@ function Proyecto({ img, nombre, descrip, link }) {
         open={open}
         onClose={() => setOpen(false)}
         nombre={nombre}
+        lema={lema}
         descrip={descrip}
         link={link}
       />

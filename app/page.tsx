@@ -1,15 +1,13 @@
 "use client";
 
-import Proyectos from "./_components/Proyectos.jsx";
-import Contacto from "./_components/Contacto.jsx";
-import QuienesSomos from "./_components/QuienesSomos.jsx";
-import Planes from "./_components/Planes.jsx";
-import Footer from "./_components/Footer.jsx";
-
-import React from "react";
-import Header from "./_components/Header.tsx";
-import MainCard from "./_components/MainCard.tsx";
-import Section from "./_components/Section.tsx";
+import Proyectos from './_components/Proyectos.tsx';
+import Contacto from './_components/Contacto.tsx';
+import QuienesSomos from './_components/QuienesSomos.jsx';
+import Planes from './_components/Planes.jsx';
+import Footer from './_components/Footer.jsx';
+import Header from './_components/Header.tsx';
+import MainCard from './_components/MainCard.tsx';
+import Section from './_components/Section.tsx';
 
 function App() {
   return (
@@ -50,7 +48,7 @@ function App() {
                 </p>
                 <a
                   className="bg-black py-3 px-8 text-lg md:text-xl rounded-xl no-underline mx-auto text-white font-semibold border-2 border-transparent hover:text-black transition-all duration-300 hover:bg-transparent hover:border-black shadow-sm hover:shadow-md"
-                  href="#form-contacto">
+                  href="#contacto">
                   Contanos tu idea
                 </a>
               </div>

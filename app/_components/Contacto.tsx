@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaInstagram } from 'react-icons/fa';
 import { useState } from 'react';
 
 function Contacto() {
@@ -50,7 +50,7 @@ function Contacto() {
           <div className="mb-6 md:mb-8 lg:mb-12 text-center w-full">
             <h2
               className="text-2xl md:text-3xl lg:text-6xl font-bold text-gray-900"
-              id="form-contacto">
+              id="contacto">
               ¡Contactanos!
             </h2>
             <p className="text-sm md:text-base lg:text-lg text-gray-700 mt-3 md:mt-4 lg:mt-6 max-w-2xl mx-auto">

@@ -1,10 +1,6 @@
 import React from "react";
 import "./index.css";
-import { Space_Grotesk, Hanken_Grotesk } from "next/font/google";
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-});
+import { Hanken_Grotesk } from 'next/font/google';
 
 const hanken_grotesk = Hanken_Grotesk({
   subsets: ["latin"],
