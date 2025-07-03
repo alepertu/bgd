@@ -1,4 +1,5 @@
 import React from "react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./index.css";
 import { Hanken_Grotesk } from 'next/font/google';
 
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html className="h-full" lang="es">
       <body className={`m-0 h-full ${hanken_grotesk.className}`}>
-        <div id="root">{children}</div>
+        <div id="root">
+          {children}
+          <SpeedInsights />
+        </div>
       </body>
     </html>
   );
