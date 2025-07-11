@@ -1,7 +1,8 @@
 import React from "react";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "./index.css";
-import { Hanken_Grotesk } from 'next/font/google';
+import { Hanken_Grotesk } from "next/font/google";
 
 const hanken_grotesk = Hanken_Grotesk({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <div id="root">
           {children}
           <SpeedInsights />
+          <Analytics />
         </div>
       </body>
     </html>
