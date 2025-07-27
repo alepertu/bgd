@@ -1,11 +1,11 @@
 "use client";
 
 import Proyectos from './_components/Proyectos.tsx';
-import Contacto from './_components/Contacto.tsx';
+import Contacto from './_sections/Contacto.tsx';
 import QuienesSomos from './_components/QuienesSomos.jsx';
-import Planes from './_components/Planes.jsx';
-import Footer from './_components/Footer.jsx';
-import Header from './_components/Header.tsx';
+import Planes from './_sections/Planes.tsx';
+import Footer from './_sections/Footer.tsx';
+import Header from './_sections/Header.tsx';
 import MainCard from './_components/MainCard.tsx';
 import Section from './_components/Section.tsx';
 
@@ -91,19 +91,10 @@ function App() {
             </svg>
           </div>
         </Section>
-
         <Proyectos />
         <QuienesSomos />
         <Planes />
         <Contacto />
-        <div className="bg-[#a5c8d8] text-center p-6 md:p-20">
-          <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
-            Llevá tu idea al siguiente nivel.
-          </h2>
-          <p className="text-base md:text-lg text-gray-700 mt-4 md:mt-6 max-w-2xl mx-auto">
-            Transformamos tu visión en una web que impacta. Empezá hoy.
-          </p>
-        </div>
       </main>
       <Footer />
     </div>
