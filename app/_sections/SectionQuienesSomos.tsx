@@ -3,18 +3,27 @@ import PiaMachado from '../../public/images/nosotros/Pía Machado.webp';
 import ThiagoSilveira from '../../public/images/nosotros/Thiago Silveira.webp';
 import TeamCard from '../_components/cards/TeamCard';
 
+function getAge(birthDateString: string): number {
+  return Math.floor(
+    (Date.now() - new Date(birthDateString).getTime()) /
+      (1000 * 60 * 60 * 24 * 365.25)
+  );
+}
+
 function QuienesSomos() {
   return (
-    <section id="nosotros" className="bg-[#FCDCBC] min-h-screen relative overflow-hidden">
+    <section
+      id="nosotros"
+      className="bg-[#FCDCBC] min-h-screen relative overflow-hidden">
       <div className="max-w-5xl mx-auto md:pb-32 pb-16 md:pt-12 pt-16 md:px-0 px-6">
-
         <div className="mb-8 md:mb-12 text-center">
           <h2 className="text-3xl md:text-6xl font-bold text-black">
             Pero... ¿Quiénes somos?
           </h2>
           <p className="text-lg md:text-xl text-gray-900 mt-4 md:mt-6 max-w-3xl mx-auto">
-            Somos PYA, un equipo de desarrollo uruguayo que se especializa en crear sitios web y aplicaciones modernas.
-            Trabajamos para hacer realidad tus ideas digitales.
+            Somos PYA, un equipo de desarrollo uruguayo que se especializa en
+            crear sitios web y aplicaciones modernas. Trabajamos para hacer
+            realidad tus ideas digitales.
           </p>
         </div>
 
@@ -23,25 +32,30 @@ function QuienesSomos() {
             image={AlePertusatti}
             name="Alejandro Pertusatti"
             role="Technical Leader"
-            description="Soy Ale, tengo 26 años. Soy estudiante de Químico Farmacéutico en UdelaR. Me gusta conocer lugares nuevos, y disfruto del tiempo de calidad en familia."
+            description={`Soy Ale, tengo ${getAge(
+              '1998-12-01'
+            )} años. Soy estudiante de Químico Farmacéutico en UdelaR. Me gusta conocer lugares nuevos, y disfruto del tiempo de calidad en familia.`}
             altText="Alejandro Pertusatti"
           />
           <TeamCard
             image={PiaMachado}
             name="Pía Machado"
             role="Project Leader"
-            description="Soy Pía, tengo 26 años. Me titulé como Analista en Programación en 2020, y estudio Ingeniería Química en UdelaR. Además de programar, disfruto de la música y de viajar."
+            description={`Soy Pía, tengo ${getAge(
+              '1998-12-27'
+            )} años. Me titulé como Analista en Programación en 2020, y estudio Ingeniería Química en UdelaR. Además de programar, disfruto de la música y de viajar.`}
             altText="Pía Machado"
           />
           <TeamCard
             image={ThiagoSilveira}
             name="Thiago Silveira"
             role="Product Developer"
-            description="Soy Thiago, tengo 18 años. Estudio Ingeniería Informática en UdelaR. Me apasiona aprender y crear cosas nuevas."
+            description={`Soy Thiago, tengo ${getAge(
+              '2007-02-04'
+            )} años. Estudio Ingeniería Informática en UdelaR. Me apasiona aprender y crear cosas nuevas.`}
             altText="Thiago Silveira"
           />
         </div>
-
 
         {/* Versión MOBILE */}
         <svg

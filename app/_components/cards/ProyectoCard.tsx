@@ -36,8 +36,7 @@ function Proyecto({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="w-full w-full mb-12 bg-white rounded-2xl overflow-hidden border-2 border-[#543E27]">
-
+        className="w-full mb-12 bg-white rounded-2xl overflow-hidden border-2 border-[#543E27]">
         <div className="flex flex-col lg:flex-row">
           {/* Imagen del proyecto - Izquierda */}
           <div className="lg:w-1/4 aspect-[4/5] relative overflow-hidden">
@@ -54,14 +53,17 @@ function Proyecto({
             <div className="space-y-4">
               {/* Título arriba */}
               <div className="text-left">
-                <h3 className="text-2xl md:text-3xl font-medium text-gray-900">{nombre}</h3>
-
+                <h3 className="text-2xl md:text-3xl font-medium text-gray-900">
+                  {nombre}
+                </h3>
               </div>
 
               {/* Descripción en el medio */}
               <div className="space-y-3 text-left">
                 {descrip.split('\n').map((parrafo, index) => (
-                  <p key={index} className="text-sm text-gray-600 md:text-lg leading-relaxed">
+                  <p
+                    key={index}
+                    className="text-sm text-gray-600 md:text-lg leading-relaxed">
                     {parrafo}
                   </p>
                 ))}

@@ -65,11 +65,11 @@ const Logo = () => {
   );
 };
 
-const navItems = ['presentacion', 'proyectos', 'nosotros', 'contacto'];
+const navItems = ['presentación', 'proyectos', 'nosotros', 'contacto'];
 
 export default function Header() {
   const [mostrarMenu, setMostrarMenu] = useState(false);
-  const [activeSection, setActiveSection] = useState('presentacion');
+  const [activeSection, setActiveSection] = useState('presentación');
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   const scrollToSection = (sectionId: string) => {
@@ -90,7 +90,10 @@ export default function Header() {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section);
             break;
           }
@@ -107,7 +110,7 @@ export default function Header() {
       {/* Logo */}
       <div className="h-10 md:h-12 flex items-center w-40 md:w-48">
         <button
-          onClick={() => scrollToSection('presentacion')}
+          onClick={() => scrollToSection('presentación')}
           className="h-full flex items-center bg-transparent border-none cursor-pointer p-0">
           <Logo />
         </button>
@@ -122,7 +125,9 @@ export default function Header() {
                 onClick={() => scrollToSection(item)}
                 onMouseEnter={() => setHoveredItem(item)}
                 onMouseLeave={() => setHoveredItem(null)}
-                className={"no-underline transition-colors duration-200 font-semibold text-lg capitalize cursor-pointer bg-transparent border-none relative z-10 text-white"}>
+                className={
+                  'no-underline transition-colors duration-200 font-semibold text-lg capitalize cursor-pointer bg-transparent border-none relative z-10'
+                }>
                 {item}
               </button>
 
@@ -134,7 +139,7 @@ export default function Header() {
                     animate={{ width: '100%', opacity: 1 }}
                     exit={{ width: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
-                    className="absolute bottom-0 left-0 h-0.5 bg-white"
+                    className="absolute bottom-0 left-0 h-0.5 bg-black"
                   />
                 )}
               </AnimatePresence>
@@ -169,7 +174,6 @@ export default function Header() {
             exit={{ x: '100%', opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="md:hidden fixed inset-0 bg-[#FCEEB3]">
-
             {/* Logo PYA */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -197,7 +201,7 @@ export default function Header() {
                   transition={{ delay: 0.1, duration: 0.3 }}
                   onClick={() => {
                     setMostrarMenu(false);
-                    scrollToSection('presentacion');
+                    scrollToSection('presentación');
                   }}
                   className="no-underline border-2 border-transparent bg-[#1e293b] text-[#FCEEB3] w-full rounded-2xl text-2xl text-center py-4 hover:bg-slate-700 transition-colors duration-200 cursor-pointer">
                   Presentación
@@ -246,7 +250,8 @@ export default function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.3 }}
                 className="absolute bottom-8 left-0 right-0 text-center text-[#1e293b] text-sm">
-                &copy; {new Date().getFullYear()} PYA. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} PYA. Todos los derechos
+                reservados.
               </motion.div>
             </nav>
           </motion.div>

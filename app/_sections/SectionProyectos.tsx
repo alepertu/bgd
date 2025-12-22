@@ -5,17 +5,18 @@ import Norkent from '../../public/images/proyectos/Norkent.webp';
 
 function Proyectos() {
   return (
-    <section id="proyectos" className="bg-blue-50 min-h-screen relative overflow-hidden">
+    <section
+      id="proyectos"
+      className="bg-blue-50 min-h-screen relative overflow-hidden">
       <div className="max-w-5xl mx-auto md:pb-32 pb-16 md:pt-12 pt-16 md:px-0 px-6">
-
         <div className="mb-8 md:mb-12 text-center">
           <h2 className="text-3xl md:text-6xl font-bold text-black">
-            Ellos confiaron en nosotros
+            Ellos confiaron en nosotros,
             <br />
-            ¿Vos qué estás esperando?
+            ¿vos qué estás esperando?
           </h2>
           <p className="text-lg md:text-xl text-gray-600 mt-4 md:mt-6 max-w-3xl mx-auto">
-            Hace crecer tu negocio, mostrá tu producto, o contá tu historia.
+            Hacé crecer tu negocio, mostrá tu producto, o contá tu historia.
             Nosotros te ayudamos.
           </p>
         </div>
@@ -27,51 +28,46 @@ function Proyectos() {
             descrip="Desarrollamos junto al equipo de Givt una web dedicada a recaudar de fondos y hacer colectas, contribuyendo con ello a distintas ONGs uruguayas. La plataforma permite a los usuarios crear campañas de recaudación, hacer donaciones de forma segura y seguir el progreso de las causas que más les importan."
             link="https://givt.uy/"
             tecnologias={[
-              { nombre: "React", icono: "react.svg" },
-              { nombre: "Next.js", icono: "next.svg" },
-              { nombre: "Node.js", icono: "node.svg" },
-              { nombre: "MongoDB", icono: "mongo.svg" },
-              { nombre: "Express", icono: "express.svg" },
-              { nombre: "CSS3", icono: "css.svg" },
-              { nombre: "JavaScript", icono: "js.svg" }
+              { nombre: 'PHP', icono: 'php.svg' },
+              { nombre: 'Symfony', icono: 'symfony.svg' },
+              { nombre: 'MySQL', icono: 'mysql.svg' },
+              { nombre: 'Bootstrap', icono: 'bootstrap.svg' },
+              { nombre: 'AWS', icono: 'aws.svg' },
+              { nombre: 'JavaScript', icono: 'js.svg' },
             ]}
           />
 
           <Proyecto
             img={Norkent}
             nombre="Norkent - Gestión de asistencia y turnos"
-
             descrip="Sistema que ayuda a las organizaciones a gestionar asistencia y turnos de forma simple, segura y eficiente, reuniendo en un solo lugar todas las herramientas necesarias para un control claro y sin complicaciones."
             link="https://norkent.com/es"
             tecnologias={[
-              { nombre: "Next.js", icono: "next.svg" },
-              { nombre: "Tailwind CSS", icono: "css.svg" },
-              { nombre: "Supabase", icono: "js.svg" },
-              { nombre: "Auth.js", icono: "js.svg" },
-              { nombre: "Cloudinary", icono: "js.svg" },
-              { nombre: "Resend", icono: "js.svg" },
-              { nombre: "Vercel", icono: "js.svg" },
-              { nombre: "PostHog", icono: "next.svg" }
+              { nombre: 'Next.js', icono: 'next.svg' },
+              { nombre: 'Tailwind CSS', icono: 'css.svg' },
+              { nombre: 'Supabase', icono: 'js.svg' },
+              { nombre: 'Auth.js', icono: 'js.svg' },
+              { nombre: 'Cloudinary', icono: 'js.svg' },
+              { nombre: 'Resend', icono: 'js.svg' },
+              { nombre: 'Vercel', icono: 'js.svg' },
+              { nombre: 'PostHog', icono: 'next.svg' },
             ]}
           />
 
           <Proyecto
             img={CampoNorte}
-            nombre="CampoNorte - Sistema de Entradas"
-            descrip="Aplicación web dedicada a la compra y venta de entradas para diferentes eventos. Ofrece una experiencia de usuario fluida para la búsqueda, compra y gestión de entradas, con sistema de pagos integrado y notificaciones en tiempo real."
+            nombre="CampoNorte - Landing Page"
+            descrip="Sitio de presentación para CampoNorte, una empresa dedicada a la agricultura y producción agropecuaria. La landing page ofrece información clara y atractiva sobre sus productos y servicios, facilitando el contacto y la interacción con potenciales clientes."
             link="https://camponorte.uy/"
             tecnologias={[
-              { nombre: "React", icono: "react.svg" },
-              { nombre: "Next.js", icono: "next.svg" },
-              { nombre: "TypeScript", icono: "js.svg" },
-              { nombre: "Tailwind CSS", icono: "css.svg" },
-              { nombre: "Node.js", icono: "node.svg" },
-              { nombre: "MySQL", icono: "mysql.svg" },
-              { nombre: "Express", icono: "express.svg" }
+              { nombre: 'React', icono: 'react.svg' },
+              { nombre: 'Next.js', icono: 'next.svg' },
+              { nombre: 'TypeScript', icono: 'js.svg' },
+              { nombre: 'Tailwind CSS', icono: 'css.svg' },
+              { nombre: 'Node.js', icono: 'node.svg' },
             ]}
           />
         </div>
-
 
         {/* Versión MOBILE */}
         <svg

@@ -46,7 +46,9 @@ function Contacto() {
   };
 
   return (
-    <section id="contacto" className="bg-[#FCDCBC] min-h-screen relative overflow-hidden">
+    <section
+      id="contacto"
+      className="bg-[#FCDCBC] min-h-screen relative overflow-hidden">
       <div className="max-w-5xl mx-auto md:pb-32 pb-16 md:pt-12 pt-16 md:px-0 px-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-full">
           <div className="w-full md:w-2/3">
@@ -57,7 +59,8 @@ function Contacto() {
                 ¡Contactanos!
               </h2>
               <p className="text-sm md:text-base lg:text-lg text-gray-700 mt-3 md:mt-4 lg:mt-6 max-w-2xl mx-auto">
-                Comparte tu idea con nosotros, queremos escucharte y ayudarte a convertirla en una realidad exitosa.
+                Compartí tu idea con nosotros, queremos escucharte y ayudarte a
+                convertirla en una realidad exitosa.
               </p>
             </div>
 
@@ -102,7 +105,7 @@ function Contacto() {
                   </div>
                   <textarea
                     name="message"
-                    placeholder="Cuéntanos brevemente tu idea"
+                    placeholder="Contanos brevemente tu idea"
                     required
                     className="p-3 border-2 border-[#543E27] rounded-2xl w-full h-32 box-border placeholder-[#543E27] focus:outline-none focus:ring-2 focus:ring-[#1e293b]/20 focus:border-[#1e293b] transition-all duration-300 resize-none"></textarea>
                 </div>
@@ -125,7 +128,8 @@ function Contacto() {
               </h3>
 
               <p className="text-sm text-gray-700 mb-4">
-                ¿Prefieres hablar directamente? Te respondemos rápido por cualquiera de estos canales.
+                ¿Preferís hablar directamente? Te respondemos rápido por
+                cualquiera de estos canales.
               </p>
 
               <div className="space-y-3 flex flex-col items-center md:items-stretch w-full">
