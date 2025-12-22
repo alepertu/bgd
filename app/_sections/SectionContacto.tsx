@@ -1,13 +1,29 @@
 "use client";
 
 import { FaWhatsapp, FaEnvelope, FaInstagram } from 'react-icons/fa';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function Contacto() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const phoneInputRef = useRef<HTMLInputElement | null>(null);
+  const messageRef = useRef<HTMLTextAreaElement | null>(null);
+
+  useEffect(() => {
+    const handlePrefill = (event: Event) => {
+      const customEvent = event as CustomEvent<{ planName?: string }>;
+      const planName = customEvent.detail?.planName ?? '';
+      const template = `Quiero contratar el plan ${planName}, mi idea es...`;
+      setMessage(template);
+      phoneInputRef.current?.focus();
+    };
+
+    window.addEventListener('prefill-contact', handlePrefill);
+    return () => window.removeEventListener('prefill-contact', handlePrefill);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -83,6 +99,18 @@ function Contacto() {
                   <div className="flex flex-col md:flex-row gap-4 items-center">
                     <div className="w-full">
                       <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Tu teléfono"
+                        value={phone}
+                        ref={phoneInputRef}
+                        onChange={(e) => setPhone(e.target.value)}
+                        className="p-3 border-2 border-[#543E27] rounded-2xl w-full placeholder-[#543E27] focus:outline-none focus:ring-2 focus:ring-[#1e293b]/20 focus:border-[#1e293b] transition-all duration-300"
+                      />
+                    </div>
+                    <span className="text-gray-900 font-medium">ó</span>
+                    <div className="w-full">
+                      <input
                         type="email"
                         name="email"
                         placeholder="Tu correo electrónico"
@@ -91,22 +119,14 @@ function Contacto() {
                         className="p-3 border-2 border-[#543E27] rounded-2xl w-full placeholder-[#543E27] focus:outline-none focus:ring-2 focus:ring-[#1e293b]/20 focus:border-[#1e293b] transition-all duration-300"
                       />
                     </div>
-                    <span className="text-gray-900 font-medium">ó</span>
-                    <div className="w-full">
-                      <input
-                        type="tel"
-                        name="phone"
-                        placeholder="Tu teléfono"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        className="p-3 border-2 border-[#543E27] rounded-2xl w-full placeholder-[#543E27] focus:outline-none focus:ring-2 focus:ring-[#1e293b]/20 focus:border-[#1e293b] transition-all duration-300"
-                      />
-                    </div>
                   </div>
                   <textarea
                     name="message"
                     placeholder="Contanos brevemente tu idea"
                     required
+                    ref={messageRef}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="p-3 border-2 border-[#543E27] rounded-2xl w-full h-32 box-border placeholder-[#543E27] focus:outline-none focus:ring-2 focus:ring-[#1e293b]/20 focus:border-[#1e293b] transition-all duration-300 resize-none"></textarea>
                 </div>
                 <div className="flex justify-center mt-6">

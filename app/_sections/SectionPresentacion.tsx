@@ -59,15 +59,14 @@ function Presentacion() {
                   variant="primary"
                   size="md"
                   className="flex-1 sm:flex-none sm:px-6">
-                  <span className="block sm:hidden">Consultar</span>
-                  <span className="hidden sm:block">Consulta gratuita</span>
+                  ¡Hablemos!
                 </Button>
                 <Button
                   onClick={scrollToProyectos}
                   variant="outline"
                   size="md"
                   className="flex-1 sm:flex-none sm:px-6">
-                  Ver trabajos
+                  Conocé más
                 </Button>
               </div>
             </div>
