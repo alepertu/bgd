@@ -13,7 +13,7 @@ function Proyectos() {
           <h2 className="text-3xl md:text-6xl font-bold text-black">
             Ellos confiaron en nosotros,
             <br />
-            ¿vos qué estás esperando?
+            ¿vos qué esperás?
           </h2>
           <p className="text-lg md:text-xl text-gray-600 mt-4 md:mt-6 max-w-3xl mx-auto">
             Hacé crecer tu negocio, mostrá tu producto, o contá tu historia.
