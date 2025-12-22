@@ -64,7 +64,7 @@ function Contacto() {
   return (
     <section
       id="contacto"
-      className="bg-[#FCDCBC] min-h-screen relative overflow-hidden">
+      className="bg-[#FCDCBC] min-h-screen relative overflow-hidden scroll-mt-[72px] md:scroll-mt-[88px]">
       <div className="max-w-5xl mx-auto md:pb-32 pb-16 md:pt-12 pt-16 md:px-0 px-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-full">
           <div className="w-full md:w-2/3">

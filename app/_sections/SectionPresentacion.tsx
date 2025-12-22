@@ -18,7 +18,9 @@ function Presentacion() {
         }
     };
     return (
-      <section id="presentación" className="text-center min-h-screen">
+      <section
+        id="presentación"
+        className="text-center min-h-screen scroll-mt-[72px] md:scroll-mt-[88px]">
         <div className="relative min-h-[100svh] md:min-h-screen flex flex-col">
           {/* Contenedor para los SVGs de fondo */}
           <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">

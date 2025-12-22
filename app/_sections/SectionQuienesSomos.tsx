@@ -14,7 +14,7 @@ function QuienesSomos() {
   return (
     <section
       id="nosotros"
-      className="bg-[#FCDCBC] min-h-screen relative overflow-hidden">
+      className="bg-[#FCDCBC] min-h-screen relative overflow-hidden scroll-mt-[72px] md:scroll-mt-[88px]">
       <div className="max-w-5xl mx-auto md:pb-32 pb-16 md:pt-12 pt-16 md:px-0 px-6">
         <div className="mb-8 md:mb-12 text-center">
           <h2 className="text-3xl md:text-6xl font-bold text-black">
