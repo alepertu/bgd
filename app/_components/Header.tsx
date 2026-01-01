@@ -13,7 +13,8 @@ const Logo = () => {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 281.95 281.95">
+      viewBox="0 0 281.95 281.95"
+      aria-label="PYA DEVS Logo">
       <defs>
         <style>{`
           .cls-1 {
@@ -109,11 +110,16 @@ export default function Header() {
     <header className="flex h-16 md:h-20 z-50 w-full px-4 md:px-6 items-center fixed top-0 left-0 bg-uy-blue-50 shadow-sm">
       {/* Logo */}
       <div className="h-10 md:h-12 flex items-center w-40 md:w-48">
-        <button
-          onClick={() => scrollToSection('presentación')}
-          className="h-full flex items-center bg-transparent border-none cursor-pointer p-0">
+        <a
+          href="#presentación"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection('presentación');
+          }}
+          className="h-full flex items-center bg-transparent border-none cursor-pointer p-0"
+          aria-label="Ir al inicio">
           <Logo />
-        </button>
+        </a>
       </div>
 
       {/* Desktop Navigation - Truly Centered */}
@@ -121,15 +127,19 @@ export default function Header() {
         <div className="flex items-center space-x-12 relative">
           {navItems.map((item, index) => (
             <div key={`desktop-nav-item-${index}`} className="relative">
-              <button
-                onClick={() => scrollToSection(item)}
+              <a
+                href={`#${item}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item);
+                }}
                 onMouseEnter={() => setHoveredItem(item)}
                 onMouseLeave={() => setHoveredItem(null)}
                 className={
                   'no-underline transition-colors duration-200 font-semibold text-lg capitalize cursor-pointer bg-transparent border-none relative z-10'
                 }>
                 {item}
-              </button>
+              </a>
 
               {/* Línea animada individual */}
               <AnimatePresence>
