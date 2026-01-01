@@ -184,28 +184,24 @@ export default function Header() {
 
   const handleNavigation = (sectionId: string) => {
     if (pathname !== '/') {
-      // Navegar al inicio con el hash de la sección
-      router.push(`/#${sectionId}`);
-      // Esperar a que la navegación se complete
+      // Navegar al inicio sin hash
+      router.push('/');
+      // Esperar a que la navegación se complete y luego hacer scroll
       setTimeout(() => {
         scrollToSection(sectionId);
+        // Limpiar cualquier hash de la URL si existe
+        if (typeof window !== 'undefined' && window.location.hash) {
+          window.history.replaceState(null, '', window.location.pathname);
+        }
       }, 500);
     } else {
       scrollToSection(sectionId);
-    }
-  };
-
-  // Efecto para hacer scroll cuando se carga la página con un hash
-  useEffect(() => {
-    if (pathname === '/') {
-      const hash = window.location.hash.slice(1); // Remover el #
-      if (hash && navItems.includes(hash)) {
-        setTimeout(() => {
-          scrollToSection(hash);
-        }, 100);
+      // Limpiar cualquier hash de la URL si existe
+      if (typeof window !== 'undefined' && window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname);
       }
     }
-  }, [pathname]);
+  };
 
   // Detectar la sección activa basada en el scroll
   useEffect(() => {
