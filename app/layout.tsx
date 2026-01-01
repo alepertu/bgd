@@ -42,7 +42,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/Logo.svg",
+        url: "https://pya.uy/Logo.svg",
         width: 1200,
         height: 630,
         alt: "PYA DEVS - Desarrollo Web Uruguay",
@@ -54,7 +54,7 @@ export const metadata = {
     title: "Desarrollo Web y Apps en Uruguay | PYA DEVS",
     description:
       "Desarrollo web y de aplicaciones en Uruguay. Creamos sitios web, tiendas online y apps a medida.",
-    images: ["/Logo.svg"],
+    images: ["https://pya.uy/Logo.svg"],
     creator: "@pya.devs",
   },
   robots: {
