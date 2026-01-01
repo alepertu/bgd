@@ -4,7 +4,106 @@
 import { useState, useEffect } from 'react';
 import { TiThMenu, TiTimes } from 'react-icons/ti';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 import Button from './ui/Button';
+
+// Hook personalizado para usar pathname de forma segura
+// Usa window.location directamente para evitar problemas con el contexto de Next.js
+function useSafePathname() {
+  const [pathname, setPathname] = useState<string>('/');
+  const [mounted, setMounted] = useState(false);
+  
+  // Inicializar con window.location cuando el componente esté montado
+  useEffect(() => {
+    setMounted(true);
+    if (typeof window !== 'undefined') {
+      setPathname(window.location.pathname);
+    }
+  }, []);
+  
+  // Escuchar cambios en window.location para navegación del navegador
+  useEffect(() => {
+    if (!mounted) return;
+    
+    const updatePathname = () => {
+      if (typeof window !== 'undefined') {
+        setPathname(window.location.pathname);
+      }
+    };
+    
+    // Actualizar cuando cambie la URL
+    window.addEventListener('popstate', updatePathname);
+    // También verificar periódicamente (por si acaso)
+    const interval = setInterval(() => {
+      if (typeof window !== 'undefined' && window.location.pathname !== pathname) {
+        setPathname(window.location.pathname);
+      }
+    }, 100);
+    
+    return () => {
+      window.removeEventListener('popstate', updatePathname);
+      clearInterval(interval);
+    };
+  }, [mounted, pathname]);
+  
+  return pathname;
+}
+
+// Hook personalizado para usar router de forma segura
+function useSafeRouter() {
+  // Llamar al hook incondicionalmente (requisito de React)
+  const router = useRouter();
+  
+  // Crear un wrapper que use window.location como fallback si es necesario
+  return {
+    push: (url: string) => {
+      try {
+        router.push(url);
+      } catch (error) {
+        if (typeof window !== 'undefined') {
+          window.location.href = url;
+        }
+      }
+    },
+    replace: (url: string) => {
+      try {
+        router.replace(url);
+      } catch (error) {
+        if (typeof window !== 'undefined') {
+          window.location.replace(url);
+        }
+      }
+    },
+    refresh: () => {
+      try {
+        router.refresh();
+      } catch (error) {
+        if (typeof window !== 'undefined') {
+          window.location.reload();
+        }
+      }
+    },
+    back: () => {
+      try {
+        router.back();
+      } catch (error) {
+        if (typeof window !== 'undefined') {
+          window.history.back();
+        }
+      }
+    },
+    forward: () => {
+      try {
+        router.forward();
+      } catch (error) {
+        if (typeof window !== 'undefined') {
+          window.history.forward();
+        }
+      }
+    },
+    prefetch: router.prefetch.bind(router),
+  };
+}
 
 const Logo = () => {
   return (
@@ -72,6 +171,8 @@ export default function Header() {
   const [mostrarMenu, setMostrarMenu] = useState(false);
   const [activeSection, setActiveSection] = useState('presentación');
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const router = useSafeRouter();
+  const pathname = useSafePathname();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -80,6 +181,31 @@ export default function Header() {
       setActiveSection(sectionId);
     }
   };
+
+  const handleNavigation = (sectionId: string) => {
+    if (pathname !== '/') {
+      // Navegar al inicio con el hash de la sección
+      router.push(`/#${sectionId}`);
+      // Esperar a que la navegación se complete
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 500);
+    } else {
+      scrollToSection(sectionId);
+    }
+  };
+
+  // Efecto para hacer scroll cuando se carga la página con un hash
+  useEffect(() => {
+    if (pathname === '/') {
+      const hash = window.location.hash.slice(1); // Remover el #
+      if (hash && navItems.includes(hash)) {
+        setTimeout(() => {
+          scrollToSection(hash);
+        }, 100);
+      }
+    }
+  }, [pathname]);
 
   // Detectar la sección activa basada en el scroll
   useEffect(() => {
@@ -114,7 +240,7 @@ export default function Header() {
           href="#presentación"
           onClick={(e) => {
             e.preventDefault();
-            scrollToSection('presentación');
+            handleNavigation('presentación');
           }}
           className="h-full flex items-center bg-transparent border-none cursor-pointer p-0"
           aria-label="Ir al inicio">
@@ -131,7 +257,8 @@ export default function Header() {
                 href={`#${item}`}
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection(item);
+                  // Si estamos en otra página, ir al inicio y luego a la sección
+                  handleNavigation(item);
                 }}
                 onMouseEnter={() => setHoveredItem(item)}
                 onMouseLeave={() => setHoveredItem(null)}
@@ -161,7 +288,7 @@ export default function Header() {
       {/* Desktop Contact Button */}
       <div className="hidden md:flex items-center w-40 md:w-48 justify-end">
         <Button
-          onClick={() => scrollToSection('contacto')}
+          onClick={() => handleNavigation('contacto')}
           variant="primary"
           size="md">
           Contactanos
@@ -211,7 +338,7 @@ export default function Header() {
                   transition={{ delay: 0.1, duration: 0.3 }}
                   onClick={() => {
                     setMostrarMenu(false);
-                    scrollToSection('presentación');
+                    handleNavigation('presentación');
                   }}
                   className="no-underline border-2 border-transparent bg-[#1e293b] text-[#FCEEB3] w-full rounded-2xl text-2xl text-center py-4 hover:bg-slate-700 transition-colors duration-200 cursor-pointer">
                   Presentación
@@ -223,7 +350,7 @@ export default function Header() {
                   transition={{ delay: 0.2, duration: 0.3 }}
                   onClick={() => {
                     setMostrarMenu(false);
-                    scrollToSection('proyectos');
+                    handleNavigation('proyectos');
                   }}
                   className="no-underline border-2 border-transparent bg-[#1e293b] text-[#FCEEB3] w-full rounded-2xl text-2xl text-center py-4 hover:bg-slate-700 transition-colors duration-200 cursor-pointer">
                   Proyectos
@@ -235,7 +362,7 @@ export default function Header() {
                   transition={{ delay: 0.3, duration: 0.3 }}
                   onClick={() => {
                     setMostrarMenu(false);
-                    scrollToSection('nosotros');
+                    handleNavigation('nosotros');
                   }}
                   className="no-underline border-2 border-transparent bg-[#1e293b] text-[#FCEEB3] w-full rounded-2xl text-2xl text-center py-4 hover:bg-slate-700 transition-colors duration-200 cursor-pointer">
                   Nosotros
@@ -247,7 +374,7 @@ export default function Header() {
                   transition={{ delay: 0.4, duration: 0.3 }}
                   onClick={() => {
                     setMostrarMenu(false);
-                    scrollToSection('contacto');
+                    handleNavigation('contacto');
                   }}
                   className="no-underline border-2 border-transparent bg-[#1e293b] text-[#FCEEB3] w-full rounded-2xl text-2xl text-center py-4 hover:bg-slate-700 transition-colors duration-200 cursor-pointer">
                   Contacto
