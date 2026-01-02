@@ -1,7 +1,11 @@
+"use client";
+
+import { useRouter } from 'next/navigation';
 import AlePertusatti from '../../public/images/nosotros/Alejandro Pertusatti.webp';
 import PiaMachado from '../../public/images/nosotros/Pía Machado.webp';
 import ThiagoSilveira from '../../public/images/nosotros/Thiago Silveira.webp';
 import TeamCard from '../_components/cards/TeamCard';
+import Button from '../_components/ui/Button';
 
 function getAge(birthDateString: string): number {
   return Math.floor(
@@ -11,6 +15,12 @@ function getAge(birthDateString: string): number {
 }
 
 function QuienesSomos() {
+  const router = useRouter();
+
+  const handleNavigateToNosotros = () => {
+    router.push('/nosotros');
+  };
+
   return (
     <section
       id="nosotros"
@@ -18,7 +28,7 @@ function QuienesSomos() {
       <div className="max-w-5xl mx-auto md:pb-32 pb-16 md:pt-12 pt-16 md:px-0 px-6">
         <div className="mb-8 md:mb-12 text-center">
           <h2 className="text-3xl md:text-6xl font-bold text-black">
-            Pero... ¿Quiénes somos?
+            Nuestro Equipo
           </h2>
           <p className="text-lg md:text-xl text-gray-900 mt-4 md:mt-6 max-w-3xl mx-auto">
             Somos PYA, un equipo de desarrollo uruguayo que se especializa en
@@ -55,6 +65,16 @@ function QuienesSomos() {
             )} años. Estudio Ingeniería Informática en UdelaR. Me apasiona aprender y crear cosas nuevas.`}
             altText="Thiago Silveira"
           />
+        </div>
+
+        <div className="flex justify-center mt-8 md:mt-12">
+          <Button
+            onClick={handleNavigateToNosotros}
+            variant="primary"
+            size="md"
+            className="px-8">
+            Conocé más sobre nosotros
+          </Button>
         </div>
 
         {/* Versión MOBILE */}

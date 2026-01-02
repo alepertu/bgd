@@ -1,6 +1,15 @@
+"use client";
+
+import { useRouter } from 'next/navigation';
 import Plan from '../_components/cards/PlanCard';
+import Button from '../_components/ui/Button';
 
 function Planes() {
+  const router = useRouter();
+
+  const handleNavigateToServicios = () => {
+    router.push('/servicios');
+  };
   return (
     <section id="planes" className="bg-blue-50 min-h-screen relative overflow-hidden">
       <div className="max-w-5xl mx-auto md:pb-32 pb-16 md:pt-12 pt-16 md:px-0 px-6">
@@ -66,6 +75,15 @@ function Planes() {
           />
         </div>
 
+        <div className="flex justify-center mt-8 md:mt-12">
+          <Button
+            onClick={handleNavigateToServicios}
+            variant="primary"
+            size="md"
+            className="px-8">
+            Conocé nuestros servicios
+          </Button>
+        </div>
 
         {/* Versión MOBILE */}
         <svg
