@@ -1,7 +1,7 @@
 import AlePertusatti from '../../public/images/nosotros/Alejandro Pertusatti.webp';
 import PiaMachado from '../../public/images/nosotros/Pía Machado.webp';
 import ThiagoSilveira from '../../public/images/nosotros/Thiago Silveira.webp';
-import GrupoPYA from '../../public/images/nosotros/Grupo de PYA DEVs.jpg';
+import GrupoPYA from '../../public/images/600x400.webp';
 import TeamCard from '../_components/cards/TeamCard';
 import Footer from '../_components/Footer.tsx';
 import Header from '../_components/Header.tsx';
