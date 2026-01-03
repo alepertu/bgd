@@ -18,10 +18,9 @@ function Planes() {
             Planes de Diseño y
             Desarrollo Web
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 mt-4 md:mt-6 max-w-3xl mx-auto">
-            Elegí el tipo de web que mejor se adapte a tus necesidades y lo
-            hacemos realidad con tecnología de vanguardia.
-          </p>
+          <h3 className="text-lg md:text-xl text-gray-600 mt-4 md:mt-6 max-w-3xl mx-auto">
+          Elegí el tipo de <strong>página web</strong> que mejor se adapte a tus necesidades y la hacemos realidad con un <strong>diseño web profesional</strong>.
+          </h3>
         </div>
 
         <div className="flex flex-col md:flex-row mb-12">

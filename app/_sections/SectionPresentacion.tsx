@@ -47,14 +47,11 @@ function Presentacion() {
           <div className="flex-1 flex flex-col justify-center pt-16 md:pt-32 pb-6 md:pb-12 relative z-10">
             <div className="flex flex-col">
               <h1 className="text-3xl md:text-6xl font-bold px-4 md:px-8 tracking-tight leading-tight">
-                Convertimos tu idea en realidad
+               Convertimos tu idea en realidad
               </h1>
-              <p className="text-base md:text-xl mt-4 md:mt-6 mb-6 md:mb-8 tracking-tight leading-relaxed text-balance max-w-2xl mx-auto px-4">
-                Desarrollamos aplicaciones web para emprendedores y start-ups.
-                <br />
-                <b>Creamos tu producto digital desde cero</b> o mejoramos el que
-                ya tenés.
-              </p>
+              <h2 className="text-base md:text-xl mt-4 md:mt-6 mb-6 md:mb-8 tracking-tight leading-relaxed text-balance max-w-2xl mx-auto px-4">
+              Desarrollamos <strong>páginas web</strong> para <strong>emprendimientos</strong> y <strong>startups</strong>, transformando tu idea en un <strong>producto digital escalable</strong> y listo para crecer.
+              </h2>
               <div className="flex flex-row gap-3 justify-center items-center px-4">
                 <Button
                   onClick={scrollToContact}
@@ -78,17 +75,17 @@ function Presentacion() {
             <MainCard
               order={1}
               title="Tienda online"
-              desc='"Quiero mi tienda online para potenciar mis ventas y llegar a más clientes."'
+              desc='"Quiero una página web para vender productos y potenciar mis ventas con un diseño web pensado para crecer."'
             />
             <MainCard
               order={2}
               title="Landing page"
-              desc='"Quiero una página donde presentar mi producto y mostrar todos los servicios que ofrezco."'
+              desc='"Quiero un sitio web donde presentar mi producto y servicios, con diseño web enfocado en resultados."'
             />
             <MainCard
               order={3}
               title="Blog personal"
-              desc='"Quiero un lugar donde poder expresarme y contarle a mis seguidores lo que pienso."'
+              desc='"Quiero una página web para compartir lo que piensto, creada por diseñadores y desarrolladores web profesionales."'
             />
           </div>
 

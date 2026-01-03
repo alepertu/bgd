@@ -74,10 +74,9 @@ function Contacto() {
                 id="contacto">
                 ¡Contactanos!
               </h2>
-              <p className="text-sm md:text-base lg:text-lg text-gray-700 mt-3 md:mt-4 lg:mt-6 max-w-2xl mx-auto">
-                Compartí tu idea con nosotros, queremos escucharte y ayudarte a
-                convertirla en una realidad exitosa.
-              </p>
+              <h3 className="text-sm md:text-base lg:text-lg text-gray-700 mt-3 md:mt-4 lg:mt-6 max-w-2xl mx-auto">
+              Compartí tu <strong>idea</strong> con nosotros, queremos escucharte y ayudarte a convertirla en una <strong>página web exitosa</strong>.
+              </h3>
             </div>
 
             {isSubmitted ? (

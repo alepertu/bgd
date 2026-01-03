@@ -30,11 +30,11 @@ function QuienesSomos() {
           <h2 className="text-3xl md:text-6xl font-bold text-black">
             Nuestro Equipo
           </h2>
-          <p className="text-lg md:text-xl text-gray-900 mt-4 md:mt-6 max-w-3xl mx-auto">
-            Somos PYA, un equipo de desarrollo uruguayo que se especializa en
-            crear sitios web y aplicaciones modernas. Trabajamos para hacer
-            realidad tus ideas digitales.
-          </p>
+          <h3 className="text-lg md:text-xl text-gray-900 mt-4 md:mt-6 max-w-3xl mx-auto">
+            Somos <strong>PYA</strong>, un equipo de <strong>desarrolladores uruguayo</strong> que se especializa en
+            crear <strong>sitios web</strong> y <strong>aplicaciones modernas</strong>. Trabajamos para hacer
+            realidad tus <strong>ideas digitales</strong>.
+          </h3>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6 md:gap-5 w-full max-w-5xl justify-center mb-12 ">

@@ -15,23 +15,30 @@ function getAge(birthDateString: string): number {
 }
 
 export const metadata = {
-  title: 'Sobre Nosotros | PYA DEVS - Equipo de Desarrollo Uruguay',
+  title: 'Sobre Nosotros | PYA DEVS - Diseñadores y Desarrolladores Web en Uruguay',
   description:
-    'Conoce al equipo de PYA DEVS. Somos un grupo de desarrolladores uruguayos apasionados por crear soluciones digitales innovadoras y de calidad.',
+    'Somos una empresa de diseño web y desarrollo web en Uruguay. Nuestro equipo de diseñadores web y desarrolladores web crea páginas web para emprendimientos y empresas. Conoce a los profesionales detrás de PYA DEVS.',
   keywords: [
-    'equipo desarrollo uruguay',
+    'diseño web',
+    'desarrollo web',
+    'diseñadores web',
+    'desarrolladores web',
+    'páginas web',
+    'empresas de paginas web en uruguay',
+    'desarrolladores de sitios webs en uruguay',
+    'página web para emprendimiento',
+    'diseño y desarrollo web en Uruguay para emprendimientos',
+    'empresa de diseño web en Uruguay para pequeñas empresas',
     'PYA DEVS equipo',
-    'desarrolladores uruguay',
-    'programadores montevideo',
     'nosotros PYA',
   ],
   alternates: {
     canonical: '/nosotros',
   },
   openGraph: {
-    title: 'Sobre Nosotros | PYA DEVS - Equipo de Desarrollo Uruguay',
+    title: 'Sobre Nosotros | PYA DEVS - Diseñadores y Desarrolladores Web en Uruguay',
     description:
-      'Conoce al equipo de PYA DEVS. Somos un grupo de desarrolladores uruguayos apasionados por crear soluciones digitales innovadoras.',
+      'Somos una empresa de diseño web y desarrollo web en Uruguay. Nuestro equipo de diseñadores web y desarrolladores web crea páginas web para emprendimientos y empresas.',
     url: 'https://pya.uy/nosotros',
     type: 'website',
   },
@@ -74,17 +81,11 @@ function Nosotros() {
                 </h3>
                 <div className="space-y-6 md:space-y-8 text-lg md:text-xl text-gray-700">
                   <p>
-                    PYA nació de la pasión por la tecnología y el deseo de crear
-                    soluciones digitales que realmente marquen la diferencia. Somos
-                    un equipo joven y dinámico, formado por profesionales que
-                    combinan experiencia técnica con creatividad e innovación.
+                    <strong>PYA</strong> nació de la pasión por la <strong>tecnología</strong> y el deseo de crear <strong>soluciones digitales</strong> que realmente marquen la <strong>diferencia</strong>. Somos un <strong>equipo joven y dinámico</strong>, formado por <strong>profesionales</strong> que combinan <strong>experiencia técnica</strong> con <strong>creatividad e innovación</strong>.
                   </p>
 
                   <p>
-                    Nos especializamos en el desarrollo de sitios web, aplicaciones
-                    móviles y sistemas personalizados. Trabajamos con tecnologías de
-                    vanguardia para ofrecer productos de alta calidad que se adaptan
-                    a las necesidades específicas de cada cliente.
+                    Nos especializamos en el desarrollo de <strong>sitios web</strong>, <strong>aplicaciones móviles</strong> y <strong>sistemas personalizados</strong>. Trabajamos con <strong>tecnologías de vanguardia</strong> para ofrecer <strong>productos de alta calidad</strong> que se adaptan a las <strong>necesidades específicas</strong> de cada cliente.
                   </p>
 
                 </div>
@@ -117,19 +118,15 @@ function Nosotros() {
               {/* Contenido a la izquierda */}
               <div className="w-full md:w-1/2 flex flex-col order-2 md:order-1">
                 <h3 className="text-2xl md:text-4xl font-bold text-black mb-6">
-                  ¿Por qué elegir PYA?
+                  ¿Por qué elegir <strong>PYA</strong>?
                 </h3>
                 <div className="space-y-6 md:space-y-8 text-lg md:text-xl text-gray-700">
                   <p>
-                    En PYA no solo desarrollamos código, creamos <strong className="text-black">soluciones que transforman negocios</strong>.
-                    Nuestra propuesta de valor única radica en combinar la agilidad de un equipo joven
-                    con la rigurosidad de profesionales multidisciplinarios.
+                    En <strong>PYA</strong> desarrollamos <strong>soluciones digitales</strong> enfocadas en resolver <strong>problemas reales de negocio</strong>. Combinamos la <strong>agilidad</strong> de un <strong>equipo joven</strong> con una <strong>base técnica sólida</strong> y <strong>multidisciplinaria</strong>.
                   </p>
 
                   <p>
-                    A diferencia de agencias tradicionales, trabajamos <strong className="text-black">directamente contigo</strong>,
-                    sin intermediarios. Esto nos permite entender profundamente tu visión y traducirla
-                    en productos digitales que realmente funcionan.
+                    Trabajamos <strong>directamente con vos</strong>, <strong>sin intermediarios</strong>, para entender tu <strong>objetivo</strong> y transformarlo en <strong>productos digitales funcionales</strong> y <strong>alineados a lo que tu negocio necesita</strong>.
                   </p>
                 </div>
               </div>
@@ -167,8 +164,7 @@ function Nosotros() {
                 Nuestro Equipo
               </h2>
               <p className="text-lg md:text-xl text-gray-800 mt-4 md:mt-6 max-w-3xl mx-auto">
-                Conoce a las personas detrás de PYA. Un equipo multidisciplinario
-                con diferentes perspectivas y habilidades complementarias.
+                Conoce a las personas detrás de <strong>PYA</strong>. Un equipo multidisciplinario con diferentes perspectivas y habilidades complementarias, especializados en crear <strong>páginas web</strong>.
               </p>
             </div>
 
@@ -221,8 +217,8 @@ function Nosotros() {
                 Nuestros Valores
               </h2>
               <p className="text-lg md:text-xl text-gray-800 mt-4 md:mt-6 max-w-3xl mx-auto">
-                Los principios que guían nuestro trabajo y nuestra relación con
-                cada cliente.
+                Los principios que guían nuestro trabajo en <strong>diseño web</strong> y <strong>desarrollo web</strong>, y nuestra relación con
+                cada cliente que confía en nosotros para crear sus <strong>páginas web</strong>.
               </p>
             </div>
 
@@ -232,9 +228,9 @@ function Nosotros() {
                   Calidad
                 </h3>
                 <p className="text-gray-700">
-                  Nos comprometemos a entregar productos de la más alta calidad,
-                  utilizando las mejores prácticas de desarrollo y tecnologías
-                  modernas.
+                  Nos comprometemos a entregar <strong>páginas web</strong> de la más alta calidad,
+                  utilizando las mejores prácticas de <strong>diseño web</strong> y <strong>desarrollo web</strong>, y tecnologías
+                  modernas que garantizan resultados excepcionales.
                 </p>
               </div>
 
@@ -244,7 +240,7 @@ function Nosotros() {
                 </h3>
                 <p className="text-gray-700">
                   Mantenemos una comunicación clara y honesta en cada etapa del
-                  proyecto, desde la planificación hasta la entrega final.
+                  proyecto de <strong>diseño web</strong> y <strong>desarrollo web</strong>, desde la planificación hasta la entrega final de tu <strong>página web</strong>.
                 </p>
               </div>
 
@@ -253,8 +249,8 @@ function Nosotros() {
                   Innovación
                 </h3>
                 <p className="text-gray-700">
-                  Estamos siempre al día con las últimas tendencias tecnológicas
-                  para ofrecer soluciones innovadoras y eficientes.
+                  Estamos siempre al día con las últimas tendencias en <strong>diseño web</strong> y <strong>desarrollo web</strong>
+                  para ofrecer <strong>páginas web</strong> innovadoras y eficientes que destacan en el mercado.
                 </p>
               </div>
 
@@ -263,9 +259,9 @@ function Nosotros() {
                   Compromiso
                 </h3>
                 <p className="text-gray-700">
-                  Nos comprometemos con el éxito de cada proyecto y trabajamos
+                  Nos comprometemos con el éxito de cada proyecto de <strong>diseño web</strong> y <strong>desarrollo web</strong> y trabajamos
                   incansablemente para superar las expectativas de nuestros
-                  clientes.
+                  clientes, entregando <strong>páginas web</strong> que realmente marcan la diferencia.
                 </p>
               </div>
             </div>
@@ -289,7 +285,7 @@ function Nosotros() {
                 Nuestra Misión y Visión
               </h2>
               <p className="text-lg md:text-xl text-gray-800 mt-4 md:mt-6 max-w-3xl mx-auto">
-                Nuestro propósito actual y el camino que estamos trazando para el futuro de nuestra empresa.
+                Nuestro propósito actual y el camino que estamos trazando para el futuro de nuestra empresa de <strong>diseño web</strong> y <strong>desarrollo web</strong> en Uruguay.
               </p>
             </div>
 
@@ -301,11 +297,7 @@ function Nosotros() {
                     Nuestra Misión
                   </h3>
                   <p className="text-lg md:text-xl text-gray-700 text-left leading-relaxed">
-                    Nuestra misión es democratizar el acceso a soluciones digitales
-                    de calidad, ayudando a emprendedores, startups y empresas a
-                    alcanzar sus objetivos en el mundo digital. Creemos que cada idea
-                    merece una oportunidad de brillar, y trabajamos para hacer que
-                    eso suceda.
+                    Nuestra misión es <strong>democratizar</strong> el acceso a <strong>soluciones digitales de calidad</strong>, ayudando a <strong>emprendedores</strong>, <strong>startups</strong> y <strong>empresas</strong> a alcanzar sus <strong>objetivos en el mundo digital</strong>. Creemos que <strong>cada idea merece una oportunidad de brillar</strong>, y trabajamos para hacer que eso suceda.
                   </p>
                 </div>
               </div>
@@ -317,10 +309,7 @@ function Nosotros() {
                     Nuestra Visión
                   </h3>
                   <p className="text-lg md:text-xl text-gray-700 text-left leading-relaxed">
-                    Ser reconocidos como el equipo de desarrollo líder en Uruguay,
-                    destacándonos por nuestra innovación, calidad y compromiso con
-                    el éxito de nuestros clientes. Aspiramos a ser el socio tecnológico
-                    de confianza que transforma ideas en realidades digitales exitosas.
+                    Ser reconocidos como el <strong>equipo de desarrollo líder en Uruguay</strong>, destacándonos por nuestra <strong>innovación</strong>, <strong>calidad</strong> y <strong>compromiso</strong> con el <strong>éxito de nuestros clientes</strong>. Aspiramos a ser el <strong>socio tecnológico de confianza</strong> que <strong>transforma ideas en realidades digitales exitosas</strong>.
                   </p>
                 </div>
               </div>

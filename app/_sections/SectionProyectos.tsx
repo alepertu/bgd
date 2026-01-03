@@ -15,17 +15,16 @@ function Proyectos() {
             <br />
             ¿vos qué esperás?
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 mt-4 md:mt-6 max-w-3xl mx-auto">
-            Hacé crecer tu negocio, mostrá tu producto, o contá tu historia.
-            Nosotros te ayudamos.
-          </p>
+          <h3 className="text-lg md:text-xl text-gray-600 mt-4 md:mt-6 max-w-3xl mx-auto">
+          Diseño de <strong>páginas web</strong> pensado para potenciar tu negocio. Creamos el <strong>presupuesto para página web</strong> que tu <strong>emprendimiento</strong> necesita.
+          </h3>
         </div>
 
         <div className="mt-12 space-y-8 md:space-y-12">
           <Proyecto
             img={Givt}
             nombre="Givt - Plataforma de Donaciones"
-            descrip="Desarrollamos junto al equipo de Givt una web dedicada a recaudar de fondos y hacer colectas, contribuyendo con ello a distintas ONGs uruguayas. La plataforma permite a los usuarios crear campañas de recaudación, hacer donaciones de forma segura y seguir el progreso de las causas que más les importan."
+            descrip="Como desarrolladores de sitios webs en Uruguay, creamos junto al equipo de Givt una plataforma de recaudación de fondos para ONGs. Esta página web para vender productos solidarios y gestionar donaciones seguras es un ejemplo de nuestro servicio de diseño y desarrollo web en Uruguay para emprendimientos sociales."
             link="https://givt.uy/"
             tecnologias={[
               { nombre: 'PHP', icono: 'php.svg' },
@@ -40,7 +39,7 @@ function Proyectos() {
           <Proyecto
             img={Norkent}
             nombre="Norkent - Gestión de asistencia y turnos"
-            descrip="Sistema que ayuda a las organizaciones a gestionar asistencia y turnos de forma simple, segura y eficiente, reuniendo en un solo lugar todas las herramientas necesarias para un control claro y sin complicaciones."
+            descrip="Especializados en desarrollo web, diseñamos este sistema SaaS para optimizar la gestión de asistencia. Si buscás cuánto cuesta una página web de gestión o necesitás hacer una página web rápido y eficiente, este proyecto refleja nuestra capacidad técnica como diseñadores web expertos."
             link="https://norkent.com/es"
             tecnologias={[
               { nombre: 'Next.js', icono: 'next.svg' },
@@ -57,7 +56,7 @@ function Proyectos() {
           <Proyecto
             img={CampoNorte}
             nombre="CampoNorte - Landing Page"
-            descrip="Sitio de presentación para CampoNorte, una empresa dedicada a la agricultura y producción agropecuaria. La landing page ofrece información clara y atractiva sobre sus productos y servicios, facilitando el contacto y la interacción con potenciales clientes."
+            descrip="Desarrollamos esta página web para una empresa agropecuaria enfocada en captar clientes en Uruguay. Como empresa de diseño web, trabajamos con pequeñas y medianas empresas, priorizando una estética profesional y funcional, ideal para quienes buscan un presupuesto para página web con resultados reales."
             link="https://camponorte.uy/"
             tecnologias={[
               { nombre: 'React', icono: 'react.svg' },

@@ -59,7 +59,7 @@ export default function MainCard({
       <h3 className="text-lg md:text-2xl font-bold w-full text-inherit flex items-center">
         <TiLightbulb className="mr-1" /> {title}
       </h3>
-      <span className="text-sm md:text-xl mt-2 leading-4 md:leading-5">{desc}</span>
+      <h3 className="text-sm md:text-xl mt-2 leading-4 md:leading-5">{desc}</h3>
     </motion.div>
   );
 }
